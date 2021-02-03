@@ -1,0 +1,62 @@
+{% load static i18n compress %}
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>{% block title %}Tuxbot Web Admin{% endblock title %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Tuxbot Web Administration">
+	<meta name="author" content="Romain J.">
+
+	<link rel="icon" href="{% static 'images/favicons/favicon.ico' %}">
+
+	{% block css %}
+		<!-- Your stuff: Third-party CSS libraries go here -->
+		<!-- ==================================================== -->
+
+		{% compress css %}
+			<!-- This file stores project-specific CSS -->
+			<link href="{% static 'css/project.css' %}" rel="stylesheet">
+		{% endcompress %}
+	{% endblock %}
+	<!-- Le javascript
+	================================================== -->
+	{# Placed at the top of the document so pages load faster with defer #}
+	{% block javascript %}
+		<!-- Your stuff: Third-party javascript libraries go here -->
+		<!-- ==================================================== -->
+
+		<!-- place project specific Javascript in this file -->
+		{% compress js %}
+			<script defer src="{% static 'js/project.js' %}"></script>
+		{% endcompress %}
+
+	{% endblock javascript %}
+</head>
+
+<body>
+
+{% include 'layouts/parts/navbar.html' %}
+
+<div class="container">
+
+	{% if messages %}
+		{% for message in messages %}
+			{% include 'layouts/parts/notification.html' %}
+		{% endfor %}
+	{% endif %}
+
+	{% block content %}{% endblock content %}
+
+</div> <!-- /container -->
+
+{% block modal %}{% endblock modal %}
+
+{% block inline_javascript %}
+	{# Script tags with only code, no src (defer by default) #}
+{% endblock inline_javascript %}
+</body>
+</html>
+
