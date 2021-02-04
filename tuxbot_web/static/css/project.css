@@ -61,8 +61,8 @@
   justify-content: space-between;
   min-height: 72px;
   padding: 0 32px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(5px);
+  background: rgba(100, 100, 100, 0.05);
+  backdrop-filter: blur(10px);
   border-radius: 5px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -99,8 +99,8 @@
   box-sizing: border-box;
   width: 150px;
   padding: 25px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(5px);
+  background: rgba(100, 100, 100, 0.05);
+  backdrop-filter: blur(10px);
   border-radius: 5px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -217,8 +217,8 @@
   .section .section-container {
     flex-direction: row;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(5px);
+    background: rgba(100, 100, 100, 0.05);
+    backdrop-filter: blur(10px);
     border-radius: 5px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
