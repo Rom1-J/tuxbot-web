@@ -1,0 +1,53 @@
+.button {
+	box-sizing: border-box;
+	text-decoration: none;
+
+	font-weight: 600;
+	cursor: pointer;
+
+	min-height: 32px;
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 5px;
+	border: none;
+
+	font-size: 14px;
+	padding: 10px 30px;
+	color: $white;
+	transition: border 180ms ease-out, background 180ms ease-out;
+}
+
+
+// ==============================================
+// Color
+// ==============================================
+
+.button-primary {
+	background-color: $blue;
+
+	&:hover {
+		background-color: $dark-blue-1
+	}
+}
+
+.button-black {
+	background-color: $black;
+	color: $white;
+
+	&:hover {
+		background-color: lighten($black, 10%)
+	}
+}
+
+// ==============================================
+// Size
+// ==============================================
+
+.button-large {
+	height: 60px;
+	font-size: 18px;
+}

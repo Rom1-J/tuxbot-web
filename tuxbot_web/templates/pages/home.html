@@ -1,1 +1,49 @@
 {% extends "layouts/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+	<div class="hero">
+		<div class="hero-container">
+			<h1 class="hero-title">{% trans 'TuxBot, a bot made for opensource' %}</h1>
+			<p class="hero-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cupiditate dolorum eligendi ex exercitationem minima nam nobis,</p>
+
+			<img alt src="{% static 'images/illustrations/home/1.svg' %}" class="hero-illustration">
+
+			<div class="hero-buttons">
+				<div class="hero-button">
+					<button type="button" class="button button-primary button-large">
+						<img class="icon icon-small" src="{% static 'images/icons/discord.svg' %}" alt="Tuxbot">{% trans 'Add to discord' %}
+					</button>
+				</div>
+				<div class="hero-button">
+					<a href="#section1" class="button button-black button-large">{% trans 'See features' %}</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="section" id="section1">
+		<div class="section-container">
+			<div class="section-text">
+				<h2 class="section-title">Such a very important title!</h2>
+				<p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad debitis delectus dignissimos dolores doloribus dolorum eaque, error excepturi explicabo facilis fugit libero nisi perspiciatis, quae quibusdam sequi voluptatum! Alias?</p>
+			</div>
+			<div class="section-illustration">
+				<img src="https://placebear.com/1200/850" alt="Creating a custom command">
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="section-container">
+			<div class="section-illustration">
+				<img src="https://placekitten.com/1200/850" alt="Creating a custom command">
+			</div>
+			<div class="section-text">
+				<h2 class="section-title">Such another important title!</h2>
+				<p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad debitis delectus dignissimos dolores doloribus dolorum eaque, error excepturi explicabo facilis fugit libero nisi perspiciatis, quae quibusdam sequi voluptatum! Alias?</p>
+			</div>
+		</div>
+	</section>
+{% endblock content %}

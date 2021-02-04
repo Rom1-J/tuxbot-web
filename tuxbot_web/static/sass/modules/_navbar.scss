@@ -1,6 +1,4 @@
 .navbar {
-	font-family: sans-serif;
-
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -8,14 +6,7 @@
 	min-height: 72px;
 	padding: 0 32px;
 
-	background: rgba(255, 255, 255, .05);
-	backdrop-filter: blur(5px);
-
-	border-radius: 5px;
-	border-top: 1px solid rgba(255, 255, 255, .1);
-	border-left: 1px solid rgba(255, 255, 255, .1);
-
-	box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+	@include blur;
 
 	.navbar-title {
 		font-weight: bold;
@@ -54,14 +45,7 @@
 			width: 150px;
 			padding: 25px;
 
-			background: rgba(255, 255, 255, .05);
-			backdrop-filter: blur(5px);
-
-			border-radius: 5px;
-			border-top: 1px solid rgba(255, 255, 255, .1);
-			border-left: 1px solid rgba(255, 255, 255, .1);
-
-			box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+			@include blur;
 
 			.navbar-dropdown-nav {
 				margin: 0;
@@ -70,14 +54,17 @@
 				font-size: 14px;
 
 				> li > a {
-					color: $light;
-					padding: 5px 0;
+					color: $white;
+					font-weight: 600;
+					font-size: 12px;
+
 					display: block;
 
-					font-weight: 400;
 					cursor: pointer;
 					opacity: 0.7;
 					text-decoration: none;
+
+					padding: 5px 0;
 					transition: opacity 175ms ease-out 0s;
 
 					&:hover {
@@ -93,8 +80,8 @@
 		list-style: none;
 
 		> li > a {
-			color: $light;
-			font-weight: 400;
+			color: $white;
+			font-weight: 600;
 			font-size: 12px;
 
 			cursor: pointer;

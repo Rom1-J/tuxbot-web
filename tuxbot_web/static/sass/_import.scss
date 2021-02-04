@@ -1,4 +1,11 @@
 @import "variables";
 
+// Mixins
+@import "mixins/blur";
+@import "mixins/button";
+@import "mixins/icon";
+
 // Modules
 @import "modules/navbar";
+@import "modules/hero";
+@import "modules/section";

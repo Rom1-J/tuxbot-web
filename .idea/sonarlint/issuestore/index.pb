@@ -35,8 +35,6 @@ H
 .github/workflows/ci.yml,8/9/899ce9c202bf7bb5480e72836c3edc773c9c4244
 >
 config/urls.py,4/5/45b243d494ecd78f07818174452843086c64845d
-b
-2tuxbot_web/templates/account/account_inactive.html,7/c/7cc911f15a74aeda31eec8ba60aab282d8983f5b
 4
 .env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
 ^
