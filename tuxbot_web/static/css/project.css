@@ -1,6 +1,5 @@
 .button {
   box-sizing: border-box;
-  text-decoration: none;
   font-weight: 600;
   cursor: pointer;
   min-height: 32px;
@@ -55,7 +54,23 @@
   height: 64px;
 }
 
+a, span, p,
+h1, h2, h3, h4, h5, h6 {
+  border: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
 .navbar {
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,9 +87,7 @@
   font-weight: bold;
   color: #fff;
   font-size: 23px;
-  letter-spacing: 0.55px;
   text-align: center;
-  text-decoration: none;
   cursor: pointer;
 }
 .navbar .navbar-left, .navbar .navbar-right {
@@ -119,7 +132,6 @@
   display: block;
   cursor: pointer;
   opacity: 0.7;
-  text-decoration: none;
   padding: 5px 0;
   transition: opacity 175ms ease-out 0s;
 }
@@ -132,7 +144,6 @@
   font-size: 12px;
   cursor: pointer;
   opacity: 0.7;
-  text-decoration: none;
   padding: 15px 10px;
   transition: opacity 175ms ease-out 0s;
 }
@@ -207,6 +218,7 @@
   padding: 0 40px;
 }
 .section .section-container {
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,6 +266,8 @@
   align-items: center;
 }
 .section .section-container .section-illustration img {
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   width: 100%;
 }
 .section:after {
@@ -274,6 +288,114 @@
   }
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  background: rgba(100, 100, 100, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+.footer .footer-row {
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  margin-bottom: 64px;
+  padding: 16px 72px;
+  max-width: 1600px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.footer .footer-row .footer-description {
+  margin-right: 16px;
+  min-width: 250px;
+}
+.footer .footer-row .footer-description .footer-title {
+  font-weight: bold;
+  font-size: 23px;
+  letter-spacing: 0.55px;
+  text-align: start;
+  text-decoration: none;
+  color: #fff;
+}
+.footer .footer-row .footer-description .footer-copyright {
+  margin: 0;
+  opacity: 0.5;
+  color: gray;
+  font-size: 14px !important;
+}
+.footer .footer-row .footer-description .footer-copyright a {
+  color: #fff;
+  opacity: 1;
+  text-decoration: none;
+}
+.footer .footer-row .footer-description .footer-copyright a:hover {
+  text-decoration: underline;
+}
+.footer .footer-row .footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  max-width: 395px;
+}
+.footer .footer-row .footer-links .footer-column {
+  margin-bottom: 64px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-row .footer-links .footer-column .footer-link {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 15px;
+  transition: color 175ms ease-out 0s;
+}
+.footer .footer-row .footer-links .footer-column .footer-link:hover {
+  color: #fff;
+}
+.footer .footer-row .footer-sub-description {
+  width: 749px;
+  margin-bottom: 0;
+}
+.footer .footer-row .footer-sub-description .footer-title {
+  padding: 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 1;
+}
+.footer .footer-row .footer-sub-description .footer-subtitle {
+  box-sizing: border-box;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+.footer .footer-row:first-of-type {
+  border-bottom: 1px solid #4b4b51;
+  align-items: flex-start;
+  padding-top: 64px;
+  margin-bottom: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -281,6 +403,8 @@ html {
 body {
   background: #16171a;
   font-family: sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 23px;
 }
 body .circles {
   z-index: -1;

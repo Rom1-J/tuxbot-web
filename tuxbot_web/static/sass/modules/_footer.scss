@@ -1,0 +1,117 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	position: relative;
+	width: 100%;
+
+	@include blur;
+
+	.footer-row {
+		position: relative;
+		flex-direction: row;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		align-self: center;
+		margin-bottom: 64px;
+		padding: 16px 72px;
+		max-width: 1600px;
+		box-sizing: border-box;
+		width: 100%;
+
+		.footer-description {
+			margin-right: 16px;
+			min-width: 250px;
+
+			.footer-title {
+				font-weight: bold;
+				font-size: 23px;
+				letter-spacing: 0.55px;
+				text-align: start;
+				text-decoration: none;
+				color: $white;
+			}
+
+			.footer-copyright {
+				margin: 0;
+				opacity: .5;
+				color: darken($white, 50%);
+				font-size: 14px !important;
+
+				a {
+					color: $white;
+					opacity: 1;
+					text-decoration: none;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		.footer-links {
+			display: flex;
+			justify-content: space-between;
+			flex: 1;
+			max-width: 395px;
+
+			.footer-column {
+				margin-bottom: 64px;
+				width: 160px;
+				display: flex;
+				flex-direction: column;
+
+				.footer-link {
+					font-size: 14px;
+					font-weight: 400;
+					color: rgba($white, 0.5);
+					padding-bottom: 15px;
+					transition: color 175ms ease-out 0s;
+
+					&:hover {
+						color: $white;
+					}
+				}
+			}
+		}
+
+		.footer-sub-description {
+			width: 749px;
+			margin-bottom: 0;
+
+			.footer-title {
+				padding: 0;
+				text-transform: uppercase;
+				color: $white;
+				font-size: 17px;
+				font-weight: 600;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				line-height: 1;
+			}
+			.footer-subtitle {
+				box-sizing: border-box;
+				border: 0;
+				font-family: inherit;
+				font-size: 100%;
+				font-style: inherit;
+				font-weight: inherit;
+				margin: 0;
+				outline: 0;
+				padding: 0;
+				vertical-align: baseline;
+			}
+		}
+
+		&:first-of-type {
+			border-bottom: 1px solid darken($light, 60%);
+			align-items: flex-start;
+			padding-top: 64px;
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,3 +1,4 @@
+{% spaceless %}
 {% load static i18n compress %}
 {% get_current_language as LANGUAGE_CODE %}
 <!DOCTYPE html>
@@ -13,26 +14,15 @@
 	<link rel="icon" href="{% static 'images/favicons/favicon.ico' %}">
 
 	{% block css %}
-		<!-- Your stuff: Third-party CSS libraries go here -->
-		<!-- ==================================================== -->
-
 		{% compress css %}
-			<!-- This file stores project-specific CSS -->
 			<link href="{% static 'css/project.css' %}" rel="stylesheet">
 		{% endcompress %}
 	{% endblock %}
-	<!-- Le javascript
-	================================================== -->
-	{# Placed at the top of the document so pages load faster with defer #}
-	{% block javascript %}
-		<!-- Your stuff: Third-party javascript libraries go here -->
-		<!-- ==================================================== -->
 
-		<!-- place project specific Javascript in this file -->
+	{% block javascript %}
 		{% compress js %}
 			<script defer src="{% static 'js/project.js' %}"></script>
 		{% endcompress %}
-
 	{% endblock javascript %}
 </head>
 
@@ -55,13 +45,11 @@
 
 	{% block content %}{% endblock content %}
 
-</div> <!-- /container -->
+</div>
 
-{% block modal %}{% endblock modal %}
+{% include 'layouts/parts/footer.html' %}
 
-{% block inline_javascript %}
-	{# Script tags with only code, no src (defer by default) #}
-{% endblock inline_javascript %}
+{% block inline_javascript %}{% endblock inline_javascript %}
 </body>
 </html>
-
+{% endspaceless %}

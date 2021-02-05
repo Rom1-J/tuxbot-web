@@ -7,6 +7,8 @@
 	padding: 0 40px;
 
 	.section-container {
+		z-index: 1;
+
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -58,6 +60,9 @@
 			align-items: center;
 
 			img {
+				border-radius: 10px;
+				box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+
 				width: 100%;
 			}
 		}
