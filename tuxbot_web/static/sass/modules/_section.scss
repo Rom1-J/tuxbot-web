@@ -89,5 +89,14 @@
 			padding-inline-start: 100px;
 		}
 	}
+	@media (max-width: $breakpoint-medium-max) {
+		&:nth-of-type(odd) .section-text {
+			padding-bottom: 20px;
+		}
+
+		&:after {
+			border-bottom: 1px solid rgba($light, .3);
+		}
+	}
 }
 
