@@ -28,7 +28,6 @@
 			.footer-title {
 				font-weight: bold;
 				font-size: 23px;
-				letter-spacing: 0.55px;
 				text-align: start;
 				text-decoration: none;
 				color: $white;
@@ -36,8 +35,7 @@
 
 			.footer-copyright {
 				margin: 0;
-				opacity: .5;
-				color: darken($white, 50%);
+				color: darken($white, 30%);
 				font-size: 14px !important;
 
 				a {
@@ -67,7 +65,7 @@
 				.footer-link {
 					font-size: 14px;
 					font-weight: 400;
-					color: rgba($white, 0.5);
+					color: darken($white, 30%);
 					padding-bottom: 15px;
 					transition: color 175ms ease-out 0s;
 
@@ -94,16 +92,7 @@
 				line-height: 1;
 			}
 			.footer-subtitle {
-				box-sizing: border-box;
-				border: 0;
-				font-family: inherit;
-				font-size: 100%;
-				font-style: inherit;
-				font-weight: inherit;
-				margin: 0;
-				outline: 0;
-				padding: 0;
-				vertical-align: baseline;
+				color: darken($white, 30%);
 			}
 		}
 

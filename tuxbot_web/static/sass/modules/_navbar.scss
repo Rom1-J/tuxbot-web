@@ -1,5 +1,7 @@
 .navbar {
-	z-index: 1;
+	* {
+		z-index: 1;
+	}
 
 	display: flex;
 	align-items: center;
@@ -53,21 +55,35 @@
 				list-style: none;
 				font-size: 14px;
 
-				> li > a {
-					color: $white;
-					font-weight: 600;
-					font-size: 12px;
+				> li {
+					border-bottom: 1px solid $light;
 
-					display: block;
+					margin: 5px 0;
 
-					cursor: pointer;
-					opacity: .7;
+					&:last-of-type {
+						border-bottom: none;
+					}
+					&:first-of-type, &:last-of-type {
+						margin: 0;
+					}
 
-					padding: 5px 0;
-					transition: opacity 175ms ease-out 0s;
+					a {
 
-					&:hover {
-						opacity: 1;
+						color: $white;
+						font-weight: 600;
+						font-size: 12px;
+
+						display: block;
+
+						cursor: pointer;
+						opacity: .7;
+
+						padding: 5px 0;
+						transition: opacity 175ms ease-out 0s;
+
+						&:hover {
+							opacity: 1;
+						}
 					}
 				}
 			}
