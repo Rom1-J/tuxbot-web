@@ -13,6 +13,9 @@ body {
 	color: rgba($white, .7);
 	line-height: 23px;
 
+	//noinspection CssInvalidPropertyValue
+	overflow: overlay;
+
 	.circles {
 		z-index: -1;
 
