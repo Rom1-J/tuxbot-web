@@ -102,5 +102,38 @@
 			padding-top: 64px;
 			margin-bottom: 0;
 		}
+
+		@media (max-width: $breakpoint-small-max) {
+			text-align: center;
+			flex-direction: column;
+
+			.footer-description, .footer-sub-description {
+				width: 100%;
+
+				.footer-title {
+					justify-content: center;
+				}
+			}
+
+			.footer-links {
+				margin: 20px auto 0 auto;
+				flex-direction: column;
+				width: 100%;
+				justify-content: center;
+
+				.footer-column {
+					flex-direction: row;
+					justify-content: space-between;
+					width: 100%;
+				}
+			}
+
+			&:last-of-type {
+				.footer-sub-description {
+					width: 100%;
+					margin-bottom: 20px;
+				}
+			}
+		}
 	}
 }
