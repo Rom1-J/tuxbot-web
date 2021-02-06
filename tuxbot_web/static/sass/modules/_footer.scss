@@ -117,13 +117,11 @@
 
 			.footer-links {
 				margin: 20px auto 0 auto;
-				flex-direction: column;
 				width: 100%;
 				justify-content: center;
 
 				.footer-column {
-					flex-direction: row;
-					justify-content: space-between;
+					flex-direction: column;
 					width: 100%;
 				}
 			}

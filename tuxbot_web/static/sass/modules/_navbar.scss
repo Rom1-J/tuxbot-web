@@ -133,4 +133,8 @@
 			display: block;
 		}
 	}
+
+	@media (max-width: $breakpoint-xsmall-max) {
+		background-color: red;
+	}
 }

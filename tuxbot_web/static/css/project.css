@@ -195,6 +195,11 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .navbar-nav .navbar-dropdown:hover, .navbar .navbar-nav .navbar-dropdown:active {
   display: block;
 }
+@media (max-width: 639px) {
+  .navbar {
+    background-color: red;
+  }
+}
 
 .hero {
   display: flex;
@@ -210,6 +215,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero .hero-container .hero-title {
   font-size: 38px;
   text-align: center;
+  line-height: 42px;
   color: #fff;
   padding: 20px 0 0 0;
   font-weight: 600;
@@ -241,6 +247,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hero .hero-container .hero-buttons .hero-button:first-of-type {
   margin-inline-end: 30px;
+}
+@media (max-width: 639px) {
+  .hero .hero-container .hero-buttons {
+    flex-direction: column;
+  }
+  .hero .hero-container .hero-buttons .hero-button {
+    align-self: center;
+  }
+  .hero .hero-container .hero-buttons .hero-button:first-of-type {
+    margin-inline-end: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .section {
@@ -448,13 +466,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   .footer .footer-row .footer-links {
     margin: 20px auto 0 auto;
-    flex-direction: column;
     width: 100%;
     justify-content: center;
   }
   .footer .footer-row .footer-links .footer-column {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
   }
   .footer .footer-row:last-of-type .footer-sub-description {
