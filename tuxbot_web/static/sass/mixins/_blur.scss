@@ -9,6 +9,8 @@
 
 	@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
 		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+
 		background: rgba(100, 100, 100, .05);
 	}
 }

@@ -1,8 +1,10 @@
 @import "variables";
 
 // Mixins
+@import "mixins/misc";
 @import "mixins/blur";
 @import "mixins/button";
+@import "mixins/text";
 @import "mixins/icon";
 @import "mixins/clear";
 

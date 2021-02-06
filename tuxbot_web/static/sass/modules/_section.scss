@@ -75,12 +75,22 @@
 		margin: 150px 0;
 	}
 
+	&:last-of-type {
+		&:after {
+			width: 0;
+		}
+	}
+
 	&:first-of-type {
 		&:before {
 			content: "";
 			display: block;
 			width: 50%;
 			margin: 100px 0;
+
+			@media (max-width: $breakpoint-medium-max) {
+				margin: 0;
+			}
 		}
 	}
 

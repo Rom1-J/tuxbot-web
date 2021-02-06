@@ -22,8 +22,22 @@
 
 
 // ==============================================
-// Color
+// Style
 // ==============================================
+
+.button-default {
+	background-color: transparent;
+
+	color: $dark;
+	border: 1px solid $light;
+
+	&:active {
+		background-color: $dark;
+
+		color: $light;
+		border: 1px solid $dark;
+	}
+}
 
 .button-primary {
 	background-color: $blue;
@@ -31,6 +45,10 @@
 	&:hover {
 		background-color: $dark-blue-1
 	}
+}
+
+.button-link {
+	text-decoration: underline;
 }
 
 .button-black {
