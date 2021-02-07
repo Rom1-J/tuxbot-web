@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-07 18:45+0100\n"
+"POT-Creation-Date: 2021-02-07 22:00+0100\n"
 "PO-Revision-Date: 2021-02-07 18:45+0100\n"
 "Last-Translator: Romain J. <romain@gnous.eu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,10 +40,27 @@ msgstr "Conditions d'Utilisation"
 msgid "Privacy Policy"
 msgstr "Confidentialité"
 
-#: tuxbot_web/templates/layouts/parts/footer.html:41
+#: tuxbot_web/templates/layouts/parts/footer.html:51
 #: tuxbot_web/templates/pages/home.html:15
-msgid "Add to discord"
+#, fuzzy
+#| msgid "Add to discord"
+msgid "Add to Discord"
 msgstr "Ajouter à Discord"
+
+#: tuxbot_web/templates/layouts/parts/navbar.html:9
+#: tuxbot_web/templates/layouts/parts/navbar.html:102
+msgid "Wiki"
+msgstr "Wiki"
+
+#: tuxbot_web/templates/layouts/parts/navbar.html:24
+#: tuxbot_web/templates/layouts/parts/navbar.html:105
+msgid "Sources"
+msgstr "Sources"
+
+#: tuxbot_web/templates/layouts/parts/navbar.html:27
+#: tuxbot_web/templates/layouts/parts/navbar.html:108
+msgid "Contact"
+msgstr "Contact"
 
 #: tuxbot_web/templates/layouts/parts/navbar.html:38
 #: tuxbot_web/templates/layouts/parts/navbar.html:75

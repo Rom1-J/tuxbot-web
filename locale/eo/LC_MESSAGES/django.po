@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-07 17:56+0100\n"
+"POT-Creation-Date: 2021-02-07 22:00+0100\n"
 "PO-Revision-Date: 2021-02-07 18:45+0100\n"
 "Last-Translator: Eban R. <contact@eban.bzh>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,10 +40,27 @@ msgstr "Uzkondiĉojn"
 msgid "Privacy Policy"
 msgstr "Privateca Politiko"
 
-#: tuxbot_web/templates/layouts/parts/footer.html:43
+#: tuxbot_web/templates/layouts/parts/footer.html:51
 #: tuxbot_web/templates/pages/home.html:15
-msgid "Add to discord"
+#, fuzzy
+#| msgid "Add to discord"
+msgid "Add to Discord"
 msgstr "Aldoni al Discord"
+
+#: tuxbot_web/templates/layouts/parts/navbar.html:9
+#: tuxbot_web/templates/layouts/parts/navbar.html:102
+msgid "Wiki"
+msgstr ""
+
+#: tuxbot_web/templates/layouts/parts/navbar.html:24
+#: tuxbot_web/templates/layouts/parts/navbar.html:105
+msgid "Sources"
+msgstr ""
+
+#: tuxbot_web/templates/layouts/parts/navbar.html:27
+#: tuxbot_web/templates/layouts/parts/navbar.html:108
+msgid "Contact"
+msgstr ""
 
 #: tuxbot_web/templates/layouts/parts/navbar.html:38
 #: tuxbot_web/templates/layouts/parts/navbar.html:75
@@ -72,7 +89,8 @@ msgstr "TuxBox, roboto kreita por malfermitkodo"
 #: tuxbot_web/templates/pages/home.html:9
 msgid ""
 "Configure moderation, ID cards, polls, and even more with this dashboard"
-msgstr "Agordu moderecon, ID-kartojn, opinisondojn kaj eĉ pli per ĉi tiu panelo "
+msgstr ""
+"Agordu moderecon, ID-kartojn, opinisondojn kaj eĉ pli per ĉi tiu panelo "
 
 #: tuxbot_web/templates/pages/home.html:18
 msgid "See features"
