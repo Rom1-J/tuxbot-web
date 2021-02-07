@@ -26,13 +26,13 @@ msgstr "Kreita de"
 #: tuxbot_web/templates/layouts/parts/navbar.html:9
 #: tuxbot_web/templates/layouts/parts/navbar.html:102
 msgid "Wiki"
-msgstr ""
+msgstr "Vikio"
 
 #: tuxbot_web/templates/layouts/parts/footer.html:12
 #: tuxbot_web/templates/layouts/parts/navbar.html:24
 #: tuxbot_web/templates/layouts/parts/navbar.html:105
 msgid "Sources"
-msgstr ""
+msgstr "Fontkodo"
 
 #: tuxbot_web/templates/layouts/parts/footer.html:13
 #: tuxbot_web/templates/layouts/parts/navbar.html:30
@@ -44,7 +44,7 @@ msgstr "Subtena Servilo"
 #: tuxbot_web/templates/layouts/parts/navbar.html:27
 #: tuxbot_web/templates/layouts/parts/navbar.html:108
 msgid "Contact"
-msgstr ""
+msgstr "Kontakti"
 
 #: tuxbot_web/templates/layouts/parts/footer.html:17
 msgid "Terms"
