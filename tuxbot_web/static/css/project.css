@@ -333,15 +333,14 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 .navbar .navbar-full .navbar-nav > li.active a {
-  opacity: 0.7;
+  opacity: 0.9;
   text-decoration: underline;
 }
 .navbar .navbar-full .navbar-nav > li a {
   color: #fff;
-  font-weight: 600;
   font-size: 12px;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.7;
   padding: 15px 10px;
   transition: opacity 0.3s ease-out 0s;
 }
@@ -519,11 +518,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar .navbar-dropdown .navbar-dropdown-nav > li a {
   color: #fff;
-  font-weight: 600;
   font-size: 12px;
   display: block;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.7;
   padding: 5px 0;
   transition: opacity 0.3s ease-out 0s;
 }

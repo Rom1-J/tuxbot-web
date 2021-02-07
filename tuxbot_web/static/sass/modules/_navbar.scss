@@ -49,18 +49,17 @@
 			> li {
 				&.active {
 					a {
-						opacity: .7;
+						opacity: .9;
 						text-decoration: underline;
 					}
 				}
 
 				a {
 					color: $white;
-					font-weight: 600;
 					font-size: 12px;
 
 					cursor: pointer;
-					opacity: .5;
+					opacity: .7;
 
 					padding: 15px 10px;
 					transition: opacity .3s ease-out 0s;
@@ -282,15 +281,13 @@
 				}
 
 				a {
-
 					color: $white;
-					font-weight: 600;
 					font-size: 12px;
 
 					display: block;
 
 					cursor: pointer;
-					opacity: .5;
+					opacity: .7;
 
 					padding: 5px 0;
 					transition: opacity .3s ease-out 0s;
