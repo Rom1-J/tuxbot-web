@@ -8,11 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-07 18:46+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2021-02-07 17:56+0100\n"
+"PO-Revision-Date: 2021-02-07 18:45+0100\n"
+"Last-Translator: Eban R. <contact@eban.bzh>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,75 +20,75 @@ msgstr ""
 
 #: tuxbot_web/templates/layouts/parts/footer.html:7
 msgid "Created by"
-msgstr ""
+msgstr "Kreita de"
 
 #: tuxbot_web/templates/layouts/parts/footer.html:11
 msgid "About"
-msgstr ""
+msgstr "Pri"
 
 #: tuxbot_web/templates/layouts/parts/footer.html:13
 #: tuxbot_web/templates/layouts/parts/navbar.html:30
 #: tuxbot_web/templates/layouts/parts/navbar.html:111
 msgid "Support Server"
-msgstr ""
+msgstr "Subtena Servilo"
 
 #: tuxbot_web/templates/layouts/parts/footer.html:17
 msgid "Terms"
-msgstr ""
+msgstr "Uzkondiĉojn"
 
 #: tuxbot_web/templates/layouts/parts/footer.html:18
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Privateca Politiko"
 
-#: tuxbot_web/templates/layouts/parts/footer.html:41
+#: tuxbot_web/templates/layouts/parts/footer.html:43
 #: tuxbot_web/templates/pages/home.html:15
 msgid "Add to discord"
-msgstr ""
+msgstr "Aldoni al Discord"
 
 #: tuxbot_web/templates/layouts/parts/navbar.html:38
 #: tuxbot_web/templates/layouts/parts/navbar.html:75
 msgid "Login"
-msgstr ""
+msgstr "Ensaluti"
 
 #: tuxbot_web/templates/layouts/parts/navbar.html:49
 #: tuxbot_web/templates/layouts/parts/navbar.html:84
 msgid "My Servers"
-msgstr ""
+msgstr "Miaj Serviloj"
 
 #: tuxbot_web/templates/layouts/parts/navbar.html:52
 #: tuxbot_web/templates/layouts/parts/navbar.html:87
 msgid "Settings"
-msgstr ""
+msgstr "Agordoj"
 
 #: tuxbot_web/templates/layouts/parts/navbar.html:55
 #: tuxbot_web/templates/layouts/parts/navbar.html:90
 msgid "Logout"
-msgstr ""
+msgstr "Elsaluti"
 
 #: tuxbot_web/templates/pages/home.html:8
 msgid "TuxBot, a bot made for opensource"
-msgstr ""
+msgstr "TuxBox, roboto kreita por malfermitkodo"
 
 #: tuxbot_web/templates/pages/home.html:9
 msgid ""
 "Configure moderation, ID cards, polls, and even more with this dashboard"
-msgstr ""
+msgstr "Agordu moderecon, ID-kartojn, opinisondojn kaj eĉ pli per ĉi tiu panelo "
 
 #: tuxbot_web/templates/pages/home.html:18
 msgid "See features"
-msgstr ""
+msgstr "Vidi kvalitojn"
 
 #: tuxbot_web/templates/pages/home.html:27
 msgid "Create Aliases and Custom Settings"
-msgstr ""
+msgstr "Kreu Aliasojn kaj Proprajn Agordojn"
 
 #: tuxbot_web/templates/pages/home.html:42
 msgid "Make Yourself Known With a Custom ID Card"
-msgstr ""
+msgstr "Konatiĝu kun propaj ID-kartoj"
 
 #: tuxbot_web/templates/pages/home.html:51
 msgid "Listen Your Community With Polls"
-msgstr ""
+msgstr "Aŭskultu Vian Komunumon Per Opinisondojn"
 
 #: tuxbot_web/users/admin.py:18
 msgid "Personal info"
