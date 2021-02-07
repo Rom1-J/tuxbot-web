@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-07 22:00+0100\n"
+"POT-Creation-Date: 2021-02-07 22:25+0100\n"
 "PO-Revision-Date: 2021-02-07 18:45+0100\n"
 "Last-Translator: Romain J. <romain@gnous.eu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,14 +23,28 @@ msgid "Created by"
 msgstr "Créé par"
 
 #: tuxbot_web/templates/layouts/parts/footer.html:11
-msgid "About"
-msgstr "À Propos"
+#: tuxbot_web/templates/layouts/parts/navbar.html:9
+#: tuxbot_web/templates/layouts/parts/navbar.html:102
+msgid "Wiki"
+msgstr "Wiki"
+
+#: tuxbot_web/templates/layouts/parts/footer.html:12
+#: tuxbot_web/templates/layouts/parts/navbar.html:24
+#: tuxbot_web/templates/layouts/parts/navbar.html:105
+msgid "Sources"
+msgstr "Sources"
 
 #: tuxbot_web/templates/layouts/parts/footer.html:13
 #: tuxbot_web/templates/layouts/parts/navbar.html:30
 #: tuxbot_web/templates/layouts/parts/navbar.html:111
 msgid "Support Server"
 msgstr "Serveur d'Assistance"
+
+#: tuxbot_web/templates/layouts/parts/footer.html:16
+#: tuxbot_web/templates/layouts/parts/navbar.html:27
+#: tuxbot_web/templates/layouts/parts/navbar.html:108
+msgid "Contact"
+msgstr "Contact"
 
 #: tuxbot_web/templates/layouts/parts/footer.html:17
 msgid "Terms"
@@ -46,21 +60,6 @@ msgstr "Confidentialité"
 #| msgid "Add to discord"
 msgid "Add to Discord"
 msgstr "Ajouter à Discord"
-
-#: tuxbot_web/templates/layouts/parts/navbar.html:9
-#: tuxbot_web/templates/layouts/parts/navbar.html:102
-msgid "Wiki"
-msgstr "Wiki"
-
-#: tuxbot_web/templates/layouts/parts/navbar.html:24
-#: tuxbot_web/templates/layouts/parts/navbar.html:105
-msgid "Sources"
-msgstr "Sources"
-
-#: tuxbot_web/templates/layouts/parts/navbar.html:27
-#: tuxbot_web/templates/layouts/parts/navbar.html:108
-msgid "Contact"
-msgstr "Contact"
 
 #: tuxbot_web/templates/layouts/parts/navbar.html:38
 #: tuxbot_web/templates/layouts/parts/navbar.html:75
@@ -136,3 +135,6 @@ msgstr ""
 #: tuxbot_web/users/views.py:25
 msgid "Information successfully updated"
 msgstr ""
+
+#~ msgid "About"
+#~ msgstr "À Propos"

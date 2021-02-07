@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-07 22:00+0100\n"
+"POT-Creation-Date: 2021-02-07 22:25+0100\n"
 "PO-Revision-Date: 2021-02-07 18:45+0100\n"
 "Last-Translator: Eban R. <contact@eban.bzh>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,14 +23,28 @@ msgid "Created by"
 msgstr "Kreita de"
 
 #: tuxbot_web/templates/layouts/parts/footer.html:11
-msgid "About"
-msgstr "Pri"
+#: tuxbot_web/templates/layouts/parts/navbar.html:9
+#: tuxbot_web/templates/layouts/parts/navbar.html:102
+msgid "Wiki"
+msgstr ""
+
+#: tuxbot_web/templates/layouts/parts/footer.html:12
+#: tuxbot_web/templates/layouts/parts/navbar.html:24
+#: tuxbot_web/templates/layouts/parts/navbar.html:105
+msgid "Sources"
+msgstr ""
 
 #: tuxbot_web/templates/layouts/parts/footer.html:13
 #: tuxbot_web/templates/layouts/parts/navbar.html:30
 #: tuxbot_web/templates/layouts/parts/navbar.html:111
 msgid "Support Server"
 msgstr "Subtena Servilo"
+
+#: tuxbot_web/templates/layouts/parts/footer.html:16
+#: tuxbot_web/templates/layouts/parts/navbar.html:27
+#: tuxbot_web/templates/layouts/parts/navbar.html:108
+msgid "Contact"
+msgstr ""
 
 #: tuxbot_web/templates/layouts/parts/footer.html:17
 msgid "Terms"
@@ -46,21 +60,6 @@ msgstr "Privateca Politiko"
 #| msgid "Add to discord"
 msgid "Add to Discord"
 msgstr "Aldoni al Discord"
-
-#: tuxbot_web/templates/layouts/parts/navbar.html:9
-#: tuxbot_web/templates/layouts/parts/navbar.html:102
-msgid "Wiki"
-msgstr ""
-
-#: tuxbot_web/templates/layouts/parts/navbar.html:24
-#: tuxbot_web/templates/layouts/parts/navbar.html:105
-msgid "Sources"
-msgstr ""
-
-#: tuxbot_web/templates/layouts/parts/navbar.html:27
-#: tuxbot_web/templates/layouts/parts/navbar.html:108
-msgid "Contact"
-msgstr ""
 
 #: tuxbot_web/templates/layouts/parts/navbar.html:38
 #: tuxbot_web/templates/layouts/parts/navbar.html:75
@@ -135,3 +134,6 @@ msgstr ""
 #: tuxbot_web/users/views.py:25
 msgid "Information successfully updated"
 msgstr ""
+
+#~ msgid "About"
+#~ msgstr "Pri"
