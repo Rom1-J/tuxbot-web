@@ -90,7 +90,13 @@
 				flex-direction: row;
 				align-items: center;
 				line-height: 1;
+
+
+				@media (max-width: $breakpoint-small-max) {
+					line-height: 2.2;
+				}
 			}
+
 			.footer-subtitle {
 				color: darken($white, 30%);
 			}

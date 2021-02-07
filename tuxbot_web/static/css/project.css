@@ -781,6 +781,11 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   line-height: 1;
 }
+@media (max-width: 959px) {
+  .footer .footer-row .footer-sub-description .footer-title {
+    line-height: 2.2;
+  }
+}
 .footer .footer-row .footer-sub-description .footer-subtitle {
   color: #b3b3b3;
 }
