@@ -17,6 +17,8 @@ urlpatterns = [
     path("users/", include("tuxbot_web.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
+
+    path("i18n/", include('django.conf.urls.i18n')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # API URLS

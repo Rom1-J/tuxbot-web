@@ -23,7 +23,6 @@
 
 		.footer-description {
 			margin-right: 16px;
-			min-width: 250px;
 
 			.footer-title {
 				font-weight: bold;
@@ -71,6 +70,105 @@
 
 					&:hover {
 						color: $white;
+					}
+				}
+
+				.footer-dropdown {
+					a {
+						img {
+							height: 16px;
+							width: 16px;
+
+							vertical-align: middle;
+						}
+
+						span {
+							margin: 0 5px;
+						}
+
+						&:hover + .footer-dropdown-nav {
+							display: block;
+						}
+					}
+
+					//noinspection DuplicatedCode
+					.footer-dropdown-nav {
+						display: none;
+						position: absolute;
+						z-index: 1020;
+						box-sizing: border-box;
+
+						width: fit-content;
+						padding: 6px 12px;
+
+						border-radius: 5px;
+						border-top: 1px solid rgba(255, 255, 255, .1);
+						border-left: 1px solid rgba(255, 255, 255, .1);
+
+						box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+						background: $dark;
+
+						margin: 0;
+
+						list-style: none;
+						font-size: 14px;
+
+						> li {
+							border-bottom: 1px solid darken($light, 69%);
+
+							margin: 5px 0;
+
+							&:last-of-type {
+								border-bottom: none;
+							}
+
+							&:first-of-type, &:last-of-type {
+								margin: 0;
+							}
+
+							button {
+								color: $white;
+								font-weight: 600;
+								font-size: 12px;
+
+								display: block;
+
+								cursor: pointer;
+								opacity: .5;
+
+								padding: 5px 0;
+								transition: opacity .3s ease-out 0s;
+
+								background-color: transparent;
+								outline: none;
+								border: none;
+
+								width: 100%;
+
+								text-align: left;
+
+								margin: 10px 0;
+
+								img {
+									height: 16px;
+									width: 16px;
+
+									vertical-align: middle;
+								}
+
+								&.active {
+									opacity: .7;
+								}
+
+								&:hover {
+									opacity: 1;
+								}
+							}
+						}
+
+						&:hover {
+							display: block;
+						}
 					}
 				}
 			}
