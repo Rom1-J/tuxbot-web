@@ -43,7 +43,7 @@ msgstr "Privateca Politiko"
 #: tuxbot_web/templates/layouts/parts/footer.html:43
 #: tuxbot_web/templates/pages/home.html:15
 msgid "Add to discord"
-msgstr "Aldoni al Discordo"
+msgstr "Aldoni al Discord"
 
 #: tuxbot_web/templates/layouts/parts/navbar.html:38
 #: tuxbot_web/templates/layouts/parts/navbar.html:75
