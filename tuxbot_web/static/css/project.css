@@ -337,14 +337,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   font-size: 12px;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.5;
   padding: 15px 10px;
-  transition: opacity 175ms ease-out 0s;
+  transition: opacity 0.3s ease-out 0s;
 }
-.navbar .navbar-full .navbar-nav > li > a:hover, .navbar .navbar-full .navbar-nav > li > a:active {
+.navbar .navbar-full .navbar-nav > li > a:hover {
   opacity: 1;
 }
-.navbar .navbar-full .navbar-nav > li > a:hover + .navbar-dropdown, .navbar .navbar-full .navbar-nav > li > a:active + .navbar-dropdown {
+.navbar .navbar-full .navbar-nav > li > a:hover + .navbar-dropdown {
   display: block;
 }
 .navbar .navbar-full .navbar-nav > li > a span, .navbar .navbar-full .navbar-nav > li > a img {
@@ -357,7 +357,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .navbar-full .navbar-nav > li > a img {
   border-radius: 50%;
 }
-.navbar .navbar-full .navbar-nav .navbar-dropdown:hover, .navbar .navbar-full .navbar-nav .navbar-dropdown:active {
+.navbar .navbar-full .navbar-nav .navbar-dropdown:hover {
   display: block;
 }
 @media (max-width: 649px) {
@@ -369,8 +369,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 72px;
-  padding: 0 32px;
+  flex-wrap: wrap;
+  min-height: 48px;
+  padding: 10px 32px 0 32px;
   background: rgba(25, 25, 25, 0.7);
   border-radius: 5px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -428,11 +429,57 @@ h1, h2, h3, h4, h5, h6 {
   height: 16px;
   width: 16px;
 }
-.navbar .navbar-responsive .navbar-profile a:hover .navbar-dropdown, .navbar .navbar-responsive .navbar-profile a:active .navbar-dropdown {
+.navbar .navbar-responsive .navbar-profile a:hover {
+  opacity: 1;
+}
+.navbar .navbar-responsive .navbar-profile a:hover + .navbar-dropdown {
   display: block;
 }
 .navbar .navbar-responsive .navbar-profile .navbar-dropdown {
   right: 0;
+}
+.navbar .navbar-responsive .navbar-profile .navbar-dropdown:hover {
+  display: block;
+}
+.navbar .navbar-responsive .navbar-hamburger:hover {
+  opacity: 1;
+}
+.navbar .navbar-responsive .navbar-hamburger:hover div:nth-of-type(1) {
+  transform-origin: right center;
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease-in;
+}
+.navbar .navbar-responsive .navbar-hamburger:hover div:nth-of-type(2) {
+  opacity: 0;
+  transition: transform 0.2s ease-in;
+}
+.navbar .navbar-responsive .navbar-hamburger:hover div:nth-of-type(3) {
+  transform-origin: right center;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in;
+}
+.navbar .navbar-responsive .navbar-hamburger:hover ~ .navbar-sidebar, .navbar .navbar-responsive .navbar-hamburger:active ~ .navbar-sidebar {
+  display: block;
+}
+.navbar .navbar-responsive .navbar-break {
+  flex-basis: 100%;
+}
+.navbar .navbar-responsive .navbar-sidebar {
+  display: none;
+  z-index: 1;
+  width: 100%;
+  margin: 20px 0;
+  border-top: 1px solid #353539;
+}
+.navbar .navbar-responsive .navbar-sidebar .navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+.navbar .navbar-responsive .navbar-sidebar:hover {
+  display: block;
 }
 .navbar .navbar-dropdown {
   display: none;
@@ -469,9 +516,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   display: block;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.5;
   padding: 5px 0;
-  transition: opacity 175ms ease-out 0s;
+  transition: opacity 0.3s ease-out 0s;
 }
 .navbar .navbar-dropdown .navbar-dropdown-nav > li a:hover {
   opacity: 1;
@@ -482,6 +529,11 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   padding-top: 100px;
   padding-bottom: 300px;
+}
+@media (max-width: 649px) {
+  .hero {
+    padding-top: 20px;
+  }
 }
 .hero .hero-container {
   flex-direction: column;

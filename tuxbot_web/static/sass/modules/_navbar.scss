@@ -52,12 +52,12 @@
 				font-size: 12px;
 
 				cursor: pointer;
-				opacity: 0.7;
+				opacity: .5;
 
 				padding: 15px 10px;
-				transition: opacity 175ms ease-out 0s;
+				transition: opacity .3s ease-out 0s;
 
-				&:hover, &:active {
+				&:hover {
 					opacity: 1;
 
 					+ .navbar-dropdown {
@@ -79,7 +79,7 @@
 				}
 			}
 
-			.navbar-dropdown:hover, .navbar-dropdown:active {
+			.navbar-dropdown:hover {
 				display: block;
 			}
 		}
@@ -101,9 +101,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		flex-wrap: wrap;
 
-		min-height: 72px;
-		padding: 0 32px;
+		min-height: 48px;
+		padding: 10px 32px 0 32px;
 
 		@include blur;
 
@@ -150,14 +151,80 @@
 				}
 			}
 
-			a:hover, a:active {
-				.navbar-dropdown {
-					display: block;
+			a {
+				&:hover {
+					opacity: 1;
+
+					+ .navbar-dropdown {
+						display: block;
+					}
 				}
 			}
 
 			.navbar-dropdown {
 				right: 0;
+
+				&:hover {
+					display: block;
+				}
+			}
+		}
+
+		.navbar-hamburger {
+			&:hover {
+				opacity: 1;
+
+				div {
+					&:nth-of-type(1) {
+						transform-origin: right center;
+						transform: rotate(-45deg);
+						transition: transform .3s ease-in;
+					}
+					&:nth-of-type(2) {
+						opacity: 0;
+						transition: transform .2s ease-in;
+					}
+					&:nth-of-type(3) {
+						transform-origin: right center;
+						transform: rotate(45deg);
+						transition: transform .3s ease-in
+					}
+				}
+			}
+		}
+
+		.navbar-hamburger:hover, .navbar-hamburger:active {
+			~ .navbar-sidebar{
+				display: block;
+			}
+		}
+
+		.navbar-break {
+			flex-basis: 100%;
+		}
+
+		.navbar-sidebar {
+			display: none;
+
+			z-index: 1;
+
+			width: 100%;
+			margin: 20px 0;
+
+			border-top: 1px solid darken($light, 69%);
+
+			.navbar-nav {
+				display: flex;
+				justify-content: space-between;
+
+				margin: 10px 0 0 0;
+				padding: 0;
+
+				list-style: none;
+			}
+
+			&:hover {
+				display: block;
 			}
 		}
 	}
@@ -206,10 +273,10 @@
 					display: block;
 
 					cursor: pointer;
-					opacity: .7;
+					opacity: .5;
 
 					padding: 5px 0;
-					transition: opacity 175ms ease-out 0s;
+					transition: opacity .3s ease-out 0s;
 
 					&:hover {
 						opacity: 1;
