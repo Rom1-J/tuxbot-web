@@ -1,5 +1,11 @@
 from django.db import models
-from django.db.models import CharField, EmailField, TextField, DateTimeField, BooleanField
+from django.db.models import (
+    CharField,
+    EmailField,
+    TextField,
+    DateTimeField,
+    BooleanField,
+)
 from django.db.models.fields import AutoField
 from django.utils.translation import gettext_lazy as _
 

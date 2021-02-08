@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pages', '0004_auto_20210208_2302'),
+        ("pages", "0004_auto_20210208_2302"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='contact',
-            name='answered',
-            field=models.BooleanField(default=False, verbose_name='Answered'),
+            model_name="contact",
+            name="answered",
+            field=models.BooleanField(default=False, verbose_name="Answered"),
         ),
         migrations.AlterField(
-            model_name='contact',
-            name='read',
-            field=models.BooleanField(default=False, verbose_name='Read'),
+            model_name="contact",
+            name="read",
+            field=models.BooleanField(default=False, verbose_name="Read"),
         ),
     ]

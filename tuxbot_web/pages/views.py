@@ -28,28 +28,23 @@ class ContactView(View):
     template_name = template_path + "contact.html"
 
     def get(self, request: WSGIRequest):
-        form = self.form_class(
-            initial={
-                'name': self.request.user.username
-            }
-        )
+        form = self.form_class(initial={"name": self.request.user.username})
 
-        return render(request, self.template_name, {'form': form})
+        return render(request, self.template_name, {"form": form})
 
     def post(self, request: WSGIRequest):
         form = self.form_class(request.POST)
 
         if form.is_valid():
-            messages.add_message(request, messages.SUCCESS, _("Message sent successfully"))
+            messages.add_message(
+                request, messages.SUCCESS, _("Message sent successfully")
+            )
             form.save()
 
             form = self.form_class(
-                initial={
-                    'name': self.request.user.username
-                }
+                initial={"name": self.request.user.username}
             )
 
-            return render(request, self.template_name, {'form': form})
+            return render(request, self.template_name, {"form": form})
 
-        return render(request, self.template_name, {'form': form})
-
+        return render(request, self.template_name, {"form": form})

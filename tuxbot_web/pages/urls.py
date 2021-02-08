@@ -1,10 +1,6 @@
 from django.urls import path
 
-from tuxbot_web.pages.views import (
-    HomeView,
-    SourcesView,
-    ContactView
-)
+from tuxbot_web.pages.views import HomeView, SourcesView, ContactView
 
 app_name = "pages"
 urlpatterns = [
