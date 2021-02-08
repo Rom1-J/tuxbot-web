@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-08 01:25+0100\n"
+"POT-Creation-Date: 2021-02-08 01:47+0100\n"
 "PO-Revision-Date: 2021-02-07 18:45+0100\n"
 "Last-Translator: Eban R. <contact@eban.bzh>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,7 @@ msgstr "Vikio"
 #: tuxbot_web/templates/layouts/parts/footer.html:12
 #: tuxbot_web/templates/layouts/parts/navbar.html:24
 #: tuxbot_web/templates/layouts/parts/navbar.html:105
+#: tuxbot_web/templates/pages/sources.html:4
 msgid "Sources"
 msgstr "Fontkodo"
 
@@ -43,6 +44,7 @@ msgstr "Subtena Servilo"
 #: tuxbot_web/templates/layouts/parts/footer.html:16
 #: tuxbot_web/templates/layouts/parts/navbar.html:27
 #: tuxbot_web/templates/layouts/parts/navbar.html:108
+#: tuxbot_web/templates/pages/contact.html:5
 msgid "Contact"
 msgstr "Kontakti"
 
@@ -79,35 +81,35 @@ msgstr "Agordoj"
 msgid "Logout"
 msgstr "Elsaluti"
 
-#: tuxbot_web/templates/pages/contact.html:8
+#: tuxbot_web/templates/pages/contact.html:10
 msgid "Contact us"
 msgstr ""
 
-#: tuxbot_web/templates/pages/contact.html:21
+#: tuxbot_web/templates/pages/contact.html:23
 msgid "Your name"
 msgstr ""
 
-#: tuxbot_web/templates/pages/contact.html:27
+#: tuxbot_web/templates/pages/contact.html:29
 msgid "Your email"
 msgstr ""
 
-#: tuxbot_web/templates/pages/contact.html:35
+#: tuxbot_web/templates/pages/contact.html:37
 msgid "Your message"
 msgstr ""
 
-#: tuxbot_web/templates/pages/contact.html:42
+#: tuxbot_web/templates/pages/contact.html:44
 msgid "Send"
 msgstr ""
 
-#: tuxbot_web/templates/pages/contact.html:49
+#: tuxbot_web/templates/pages/contact.html:51
 msgid "On Social Network"
 msgstr ""
 
-#: tuxbot_web/templates/pages/contact.html:66
+#: tuxbot_web/templates/pages/contact.html:68
 msgid "On Discord"
 msgstr ""
 
-#: tuxbot_web/templates/pages/contact.html:68
+#: tuxbot_web/templates/pages/contact.html:70
 msgid ""
 "Would you like to talk directly to us? Don't hesitate to visit our <a class="
 "\"text-link\" href=\"https://discord.gg/URKy7yd\" title=\"Discord\" target="

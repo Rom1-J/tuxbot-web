@@ -21,6 +21,7 @@
 
 	{% block javascript %}
 		{% compress js %}
+			<script defer src="{% static 'js/lib/turbolinks.js' %}"></script>
 			<script defer src="{% static 'js/project.js' %}"></script>
 		{% endcompress %}
 	{% endblock javascript %}
