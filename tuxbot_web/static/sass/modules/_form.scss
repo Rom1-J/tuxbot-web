@@ -1,0 +1,26 @@
+.form-group {
+	margin-bottom: 1rem;
+
+	label {
+		display: block;
+		margin-bottom: .5rem;
+	}
+
+	input, textarea {
+		border: 1px solid $dark;
+		background: transparent;
+		border-radius: 5px;
+		color: $white;
+		padding: 10px 8px;
+		display: block;
+		width: 100%;
+		outline: 0;
+
+		@include blur
+	}
+
+	textarea {
+		min-height: 150px;
+		resize: none;
+	}
+}

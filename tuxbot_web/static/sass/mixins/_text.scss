@@ -1,3 +1,20 @@
 .text-danger {
 	color: #f0506e!important;
 }
+
+.text-link {
+	color: white;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.section-title {
+	font-family: Inter,sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	border-bottom: 1px solid $dark;
+	padding-bottom: 4px;
+	margin-bottom: 16px;
+}

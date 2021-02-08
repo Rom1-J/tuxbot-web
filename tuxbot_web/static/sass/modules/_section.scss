@@ -98,6 +98,9 @@
 		&:nth-of-type(even) .section-text {
 			padding-inline-start: 100px;
 		}
+		&:nth-of-type(odd) .section-text {
+			padding-inline-end: 100px;
+		}
 	}
 	@media (max-width: $breakpoint-medium-max) {
 		&:nth-of-type(odd) .section-text {

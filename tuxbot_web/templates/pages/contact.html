@@ -1,5 +1,75 @@
 {% extends "layouts/base.html" %}
+{% load i18n %}
+{% load static %}
 
 {% block content %}
-	Contact
+	<div class="hero padding-bottom-clear">
+		<div class="hero-container">
+			<h1 class="hero-title">{% trans 'Contact us' %}</h1>
+		</div>
+	</div>
+
+	<section class="section no-before no-after padding-large-top padding-xlarge-bottom">
+		<div class="section-container">
+			<div class="row row-gap-6 margin-top margin-bottom">
+				<div class="col-12 col-md-8">
+					<form action="" method="post">
+						{% csrf_token %}
+						<div class="row row-sm-gap-2">
+							<div class="col-12 col">
+								<div class="form-group">
+									<label for="name">{% trans 'Your name' %}</label>
+									<input name="name" id="name" type="text" required>
+								</div>
+							</div>
+							<div class="col-12 col">
+								<div class="form-group">
+									<label for="email">{% trans 'Your email' %}</label>
+									<input name="email" id="email" type="email" required>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="form-group">
+									<label for="content">{% trans 'Your message' %}</label>
+									<textarea name="content" id="content" required></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row padding-top">
+							<div class="col">
+								<button class="button button-primary">{% trans 'Send' %}</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col">
+					<div>
+						<div class="section-title">{% trans 'On Social Network' %}</div>
+						<div class="hstack">
+							<a href="https://rss.gnous.eu/" title="RSS" target="_blank">
+								<img class="icon icon-small" src="{% static 'images/icons/social/rss.svg' %}" alt="RSS" loading="lazy">
+							</a>
+							<a href="https://github.com/Rom1-J" title="Github" target="_blank">
+								<img class="icon icon-small icon-dark" src="{% static 'images/icons/social/github.svg' %}" alt="Github" loading="lazy">
+							</a>
+							<a href="https://discord.gg/URKy7yd" title="Discord" target="_blank">
+								<img class="icon icon-small" src="{% static 'images/icons/social/discord.svg' %}" alt="Discord" loading="lazy">
+							</a>
+							<a href="https://twitter.com/gnouseu" title="Twitter" target="_blank">
+								<img class="icon icon-small" src="{% static 'images/icons/social/twitter.svg' %}" alt="Twitter" loading="lazy">
+							</a>
+						</div>
+					</div>
+					<div class="margin-medium-top">
+						<div class="section-title">{% trans 'On Discord' %}</div>
+						<p class="formatted">
+							{% blocktrans %}Would you like to talk directly to us? Don't hesitate to visit our <a class="text-link" href="https://discord.gg/URKy7yd" title="Discord" target="_blank">Discord server.</a>{% endblocktrans %}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 {% endblock %}

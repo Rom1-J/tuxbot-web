@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-07 22:25+0100\n"
+"POT-Creation-Date: 2021-02-08 01:25+0100\n"
 "PO-Revision-Date: 2021-02-07 18:45+0100\n"
 "Last-Translator: Eban R. <contact@eban.bzh>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,8 +56,6 @@ msgstr "Privateca Politiko"
 
 #: tuxbot_web/templates/layouts/parts/footer.html:51
 #: tuxbot_web/templates/pages/home.html:15
-#, fuzzy
-#| msgid "Add to discord"
 msgid "Add to Discord"
 msgstr "Aldoni al Discord"
 
@@ -80,6 +78,41 @@ msgstr "Agordoj"
 #: tuxbot_web/templates/layouts/parts/navbar.html:90
 msgid "Logout"
 msgstr "Elsaluti"
+
+#: tuxbot_web/templates/pages/contact.html:8
+msgid "Contact us"
+msgstr ""
+
+#: tuxbot_web/templates/pages/contact.html:21
+msgid "Your name"
+msgstr ""
+
+#: tuxbot_web/templates/pages/contact.html:27
+msgid "Your email"
+msgstr ""
+
+#: tuxbot_web/templates/pages/contact.html:35
+msgid "Your message"
+msgstr ""
+
+#: tuxbot_web/templates/pages/contact.html:42
+msgid "Send"
+msgstr ""
+
+#: tuxbot_web/templates/pages/contact.html:49
+msgid "On Social Network"
+msgstr ""
+
+#: tuxbot_web/templates/pages/contact.html:66
+msgid "On Discord"
+msgstr ""
+
+#: tuxbot_web/templates/pages/contact.html:68
+msgid ""
+"Would you like to talk directly to us? Don't hesitate to visit our <a class="
+"\"text-link\" href=\"https://discord.gg/URKy7yd\" title=\"Discord\" target="
+"\"_blank\">Discord server.</a>"
+msgstr ""
 
 #: tuxbot_web/templates/pages/home.html:8
 msgid "TuxBot, a bot made for opensource"

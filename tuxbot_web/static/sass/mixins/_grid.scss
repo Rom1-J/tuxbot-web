@@ -1,0 +1,81 @@
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+	@for $i from 1 through 12 {
+		.col-#{$i} {
+			flex: 0 0 percentage(1/(12/$i));
+			max-width: percentage(1/(12/$i))
+		}
+	}
+
+	@for $i from 1 through 12 {
+		&.row-gap-#{$i} {
+			gap: $i * 8px;
+		}
+	}
+
+	@media (min-width: $breakpoint-small) {
+		.col {
+			flex-basis: 0;
+			flex-grow: 1;
+			max-width: 100%;
+		}
+
+		@for $i from 1 through 12 {
+			.col-sm-#{$i} {
+				flex: 0 0 percentage(1/(12/$i));
+				max-width: percentage(1/(12/$i))
+			}
+		}
+
+		@for $i from 1 through 12 {
+			&.row-sm-gap-#{$i} {
+				gap: $i * 8px;
+			}
+		}
+	}
+
+	@media (min-width: $breakpoint-medium) {
+		.col {
+			flex-basis: 0;
+			flex-grow: 1;
+			max-width: 100%;
+		}
+
+		@for $i from 1 through 12 {
+			.col-md-#{$i} {
+				flex: 0 0 percentage(1/(12/$i));
+				max-width: percentage(1/(12/$i))
+			}
+		}
+
+		@for $i from 1 through 12 {
+			&.row-md-gap-#{$i} {
+				gap: $i * 8px;
+			}
+		}
+	}
+
+	@media (min-width: $breakpoint-large) {
+		.col {
+			flex-basis: 0;
+			flex-grow: 1;
+			max-width: 100%;
+		}
+
+		@for $i from 1 through 12 {
+			.col-lg-#{$i} {
+				flex: 0 0 percentage(1/(12/$i));
+				max-width: percentage(1/(12/$i))
+			}
+		}
+
+		@for $i from 1 through 12 {
+			&.row-lg-gap-#{$i} {
+				gap: $i * 8px;
+			}
+		}
+	}
+}
