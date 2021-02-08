@@ -3,23 +3,10 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 from django.views import defaults as default_views
-from django.views.generic import TemplateView
 from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
-                  path("",
-                       TemplateView.as_view(template_name="pages/home.html"),
-                       name="home"),
-                  path(
-                      "sources/",
-                      TemplateView.as_view(template_name="pages/sources.html"),
-                      name="sources"
-                  ),
-                  path(
-                      "contact/",
-                      TemplateView.as_view(template_name="pages/contact.html"),
-                      name="contact"
-                  ),
+                  path("", include("tuxbot_web.pages.urls", namespace="pages")),
                   # Django Admin, use {% url 'admin:index' %}
                   path(settings.ADMIN_URL, admin.site.urls),
                   # User management

@@ -6,6 +6,27 @@
 	filter: brightness(10);
 }
 
+.icon-info {
+	color: $color-info
+}
+
+.icon-success {
+	color: $color-success
+}
+
+.icon-warning {
+	color: $color-warning
+}
+
+.icon-danger {
+	color: $color-danger
+}
+
+.icon-xsmall {
+	width: 12px;
+	height: 12px;
+}
+
 .icon-small {
 	width: 32px;
 	height: 32px;

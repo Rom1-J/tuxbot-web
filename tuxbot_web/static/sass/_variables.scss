@@ -33,3 +33,10 @@ $breakpoint-xsmall-max: ($breakpoint-small - 1) !default;
 $breakpoint-small-max: ($breakpoint-medium - 1) !default;
 $breakpoint-medium-max: ($breakpoint-large - 1) !default;
 $breakpoint-large-max: ($breakpoint-xlarge - 1) !default;
+
+
+$color-success: #32d296;
+$color-info: #1e87f0 ;
+$color-warning: #faa05a;
+$color-danger: #f0506e;
+$color-muted: #f8f8f8;

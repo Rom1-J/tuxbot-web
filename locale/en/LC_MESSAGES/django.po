@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-08 01:47+0100\n"
+"POT-Creation-Date: 2021-02-08 23:03+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,46 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: tuxbot_web/pages/admin.py:11 tuxbot_web/pages/models.py:11
+msgid "Message"
+msgstr ""
+
+#: tuxbot_web/pages/apps.py:7
+msgid "Pages"
+msgstr ""
+
+#: tuxbot_web/pages/forms.py:13
+msgid "Your name"
+msgstr ""
+
+#: tuxbot_web/pages/forms.py:14
+msgid "Your email"
+msgstr ""
+
+#: tuxbot_web/pages/forms.py:15
+msgid "Your message"
+msgstr ""
+
+#: tuxbot_web/pages/models.py:9
+msgid "Name"
+msgstr ""
+
+#: tuxbot_web/pages/models.py:10
+msgid "Email"
+msgstr ""
+
+#: tuxbot_web/pages/models.py:15
+msgid "Read"
+msgstr ""
+
+#: tuxbot_web/pages/models.py:16
+msgid "Answered"
+msgstr ""
+
+#: tuxbot_web/pages/views.py:43
+msgid "Message sent successfully"
+msgstr ""
 
 #: tuxbot_web/templates/layouts/parts/footer.html:7
 msgid "Created by"
@@ -85,31 +125,19 @@ msgstr ""
 msgid "Contact us"
 msgstr ""
 
-#: tuxbot_web/templates/pages/contact.html:23
-msgid "Your name"
-msgstr ""
-
-#: tuxbot_web/templates/pages/contact.html:29
-msgid "Your email"
-msgstr ""
-
-#: tuxbot_web/templates/pages/contact.html:37
-msgid "Your message"
-msgstr ""
-
-#: tuxbot_web/templates/pages/contact.html:44
+#: tuxbot_web/templates/pages/contact.html:47
 msgid "Send"
 msgstr ""
 
-#: tuxbot_web/templates/pages/contact.html:51
+#: tuxbot_web/templates/pages/contact.html:54
 msgid "On Social Network"
 msgstr ""
 
-#: tuxbot_web/templates/pages/contact.html:68
+#: tuxbot_web/templates/pages/contact.html:71
 msgid "On Discord"
 msgstr ""
 
-#: tuxbot_web/templates/pages/contact.html:70
+#: tuxbot_web/templates/pages/contact.html:73
 msgid ""
 "Would you like to talk directly to us? Don't hesitate to visit our <a class="
 "\"text-link\" href=\"https://discord.gg/URKy7yd\" title=\"Discord\" target="

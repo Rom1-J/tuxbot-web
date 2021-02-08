@@ -79,3 +79,13 @@
 		}
 	}
 }
+
+.justify-content-center {
+	justify-content: center !important;
+}
+
+@for $i from 0 through 4 {
+	.w-#{$i * 25} {
+		width: ($i * 25) * 1% !important
+	}
+}

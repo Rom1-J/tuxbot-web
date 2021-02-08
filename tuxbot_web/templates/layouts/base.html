@@ -21,7 +21,7 @@
 
 	{% block javascript %}
 		{% compress js %}
-			<script defer src="{% static 'js/lib/turbolinks.js' %}"></script>
+			{% if not DEBUG %}<script defer src="{% static 'js/lib/turbolinks.js' %}"></script>{% endif %}
 			<script defer src="{% static 'js/project.js' %}"></script>
 		{% endcompress %}
 	{% endblock javascript %}
@@ -38,9 +38,15 @@
 
 <div class="container" id="app">
 	{% if messages %}
-		{% for message in messages %}
-			{% include 'layouts/parts/notification.html' %}
-		{% endfor %}
+		<div class="row justify-content-center" style="margin-bottom: -100px">
+			{% for message in messages %}
+				<div class="col col-8 col-sm-8 col-md-6 col-lg-6">
+					{% include 'layouts/parts/notification.html' %}
+				</div>
+
+				<div class="w-100"></div>
+			{% endfor %}
+		</div>
 	{% endif %}
 
 	{% block content %}{% endblock content %}

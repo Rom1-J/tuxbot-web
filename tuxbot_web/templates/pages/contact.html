@@ -20,22 +20,25 @@
 						<div class="row row-sm-gap-2">
 							<div class="col-12 col">
 								<div class="form-group">
-									<label for="name">{% trans 'Your name' %}</label>
-									<input name="name" id="name" type="text" required>
+									{{ form.name.label_tag }}
+									{{ form.name }}
+									{{ form.name.errors }}
 								</div>
 							</div>
 							<div class="col-12 col">
 								<div class="form-group">
-									<label for="email">{% trans 'Your email' %}</label>
-									<input name="email" id="email" type="email" required>
+									{{ form.email.label_tag }}
+									{{ form.email }}
+									{{ form.email.errors }}
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-12">
 								<div class="form-group">
-									<label for="content">{% trans 'Your message' %}</label>
-									<textarea name="content" id="content" required></textarea>
+									{{ form.message.label_tag }}
+									{{ form.message }}
+									{{ form.message.errors }}
 								</div>
 							</div>
 						</div>
