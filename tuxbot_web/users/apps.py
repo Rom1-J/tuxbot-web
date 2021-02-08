@@ -8,6 +8,8 @@ class UsersConfig(AppConfig):
 
     def ready(self):
         try:
+            # pylint: disable=import-outside-toplevel
+            # pylint: disable=unused-import
             import tuxbot_web.users.signals  # noqa F401
         except ImportError:
             pass

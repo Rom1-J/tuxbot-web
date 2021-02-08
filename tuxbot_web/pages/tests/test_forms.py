@@ -7,7 +7,8 @@ pytestmark = pytest.mark.django_db
 
 
 class TestContactCreationForm:
-    def test_clean_contact(self):
+    @staticmethod
+    def test_clean_contact():
         # A contact with proto_contact params does not exist yet.
         proto_contact = ContactFactory.build()
 
@@ -21,7 +22,8 @@ class TestContactCreationForm:
 
         assert form.is_valid()
 
-    def test_failed_contact(self):
+    @staticmethod
+    def test_failed_contact():
         # A contact with proto_contact params does not exist yet.
         proto_contact = ContactFactory.build()
 

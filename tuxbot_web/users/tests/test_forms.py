@@ -7,15 +7,16 @@ pytestmark = pytest.mark.django_db
 
 
 class TestUserCreationForm:
-    def test_clean_username(self):
+    @staticmethod
+    def test_clean_username():
         # A user with proto_user params does not exist yet.
         proto_user = UserFactory.build()
 
         form = UserCreationForm(
             {
                 "username": proto_user.username,
-                "password1": proto_user._password,
-                "password2": proto_user._password,
+                "password1": proto_user._password,  # pylint: disable=protected-access
+                "password2": proto_user._password,  # pylint: disable=protected-access
             }
         )
 
@@ -30,8 +31,8 @@ class TestUserCreationForm:
         form = UserCreationForm(
             {
                 "username": proto_user.username,
-                "password1": proto_user._password,
-                "password2": proto_user._password,
+                "password1": proto_user._password,  # pylint: disable=protected-access
+                "password2": proto_user._password,  # pylint: disable=protected-access
             }
         )
 

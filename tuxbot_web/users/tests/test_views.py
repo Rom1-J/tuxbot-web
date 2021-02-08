@@ -27,7 +27,8 @@ class TestUserUpdateView:
         https://github.com/pytest-dev/pytest-django/pull/258
     """
 
-    def test_get_success_url(self, user: User, rf: RequestFactory):
+    @staticmethod
+    def test_get_success_url(user: User, rf: RequestFactory):
         view = UserUpdateView()
         request = rf.get("/fake-url/")
         request.user = user
@@ -36,7 +37,8 @@ class TestUserUpdateView:
 
         assert view.get_success_url() == f"/users/{user.username}/"
 
-    def test_get_object(self, user: User, rf: RequestFactory):
+    @staticmethod
+    def test_get_object(user: User, rf: RequestFactory):
         view = UserUpdateView()
         request = rf.get("/fake-url/")
         request.user = user
@@ -45,7 +47,8 @@ class TestUserUpdateView:
 
         assert view.get_object() == user
 
-    def test_form_valid(self, user: User, rf: RequestFactory):
+    @staticmethod
+    def test_form_valid(user: User, rf: RequestFactory):
         view = UserUpdateView()
         request = rf.get("/fake-url/")
 
@@ -66,7 +69,8 @@ class TestUserUpdateView:
 
 
 class TestUserRedirectView:
-    def test_get_redirect_url(self, user: User, rf: RequestFactory):
+    @staticmethod
+    def test_get_redirect_url(user: User, rf: RequestFactory):
         view = UserRedirectView()
         request = rf.get("/fake-url")
         request.user = user
@@ -77,7 +81,8 @@ class TestUserRedirectView:
 
 
 class TestUserDetailView:
-    def test_authenticated(self, user: User, rf: RequestFactory):
+    @staticmethod
+    def test_authenticated(user: User, rf: RequestFactory):
         request = rf.get("/fake-url/")
         request.user = UserFactory()
 
@@ -85,7 +90,8 @@ class TestUserDetailView:
 
         assert response.status_code == 200
 
-    def test_not_authenticated(self, user: User, rf: RequestFactory):
+    @staticmethod
+    def test_not_authenticated(user: User, rf: RequestFactory):
         request = rf.get("/fake-url/")
         request.user = AnonymousUser()
 
@@ -94,7 +100,8 @@ class TestUserDetailView:
         assert response.status_code == 302
         assert response.url == "/accounts/login/?next=/fake-url/"
 
-    def test_case_sensitivity(self, rf: RequestFactory):
+    @staticmethod
+    def test_case_sensitivity(rf: RequestFactory):
         request = rf.get("/fake-url/")
         request.user = UserFactory(username="UserName")
 

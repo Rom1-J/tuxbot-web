@@ -86,7 +86,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "tuxbot_web.users.apps.UsersConfig",
     # Your stuff: custom apps go here
-    "tuxbot_web.pages.apps.PagessConfig",
+    "tuxbot_web.pages.apps.PagesConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS

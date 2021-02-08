@@ -1,13 +1,13 @@
 from django.forms import ModelForm
 
-from tuxbot_web.pages.models import Contact
 from django.utils.translation import gettext_lazy as _
+from tuxbot_web.pages.models import Contact
 
 
 class ContactForm(ModelForm):
     class Meta:
         model = Contact
-        exclude = ["created_at", "read", "replied"]
+        fields = ["name", "email", "message"]
 
         labels = {
             "name": _("Your name"),
