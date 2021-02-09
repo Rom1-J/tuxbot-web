@@ -48,4 +48,6 @@ class ContactView(View):
         else:
             status = 400
 
-        return render(request, self.template_name, {"form": form}, status=status)
+        return render(
+            request, self.template_name, {"form": form}, status=status
+        )

@@ -62,6 +62,7 @@ INSTALLED_APPS += ["django_extensions"]  # noqa F405
 
 # Your stuff...
 # ------------------------------------------------------------------------------
-# COMPRESS_OFFLINE = True
-# COMPRESS_ENABLED = True
-# COMPRESS_CSS_FILTERS = ['compressor.filters.css_default.CssAbsoluteFilter',  'compressor.filters.cssmin.CSSMinFilter']
+if not DEBUG:
+    COMPRESS_OFFLINE = True
+    COMPRESS_ENABLED = True
+    COMPRESS_CSS_FILTERS = ['compressor.filters.css_default.CssAbsoluteFilter',  'compressor.filters.cssmin.CSSMinFilter']
