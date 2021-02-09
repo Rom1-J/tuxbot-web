@@ -50,10 +50,10 @@ jobs:
         run:  docker-compose -f local.yml run --rm django python manage.py migrate
 
       - name: Make Statics
-        run: docker-compose -f local.yml run --rm django python manage.py collectstatic
+        run:  docker-compose -f local.yml run --rm django python manage.py collectstatic
 
       - name: Make Compressed Statics
-        run: docker-compose -f local.yml run --rm django python manage.py compress --force
+        run:  docker-compose -f local.yml run --rm django python manage.py compress --force
 
       - name: Run the Stack
         run:  docker-compose -f local.yml up -d

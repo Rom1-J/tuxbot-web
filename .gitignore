@@ -16,6 +16,7 @@ downloads/
 eggs/
 .eggs/
 lib/
+!tuxbot_web/static/**/lib
 lib64/
 parts/
 !tuxbot_web/templates/layouts/parts
