@@ -11,6 +11,7 @@ lint:
 .PHONY: black
 black:
 	$(PYTHON_PATH) -m black tuxbot_web --line-length=79
+	$(PYTHON_PATH) -m black config --line-length=79
 
 .PHONY: type
 type:
