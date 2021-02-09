@@ -49,6 +49,12 @@ jobs:
       - name: Make DB Migrations
         run:  docker-compose -f local.yml run --rm django python manage.py migrate
 
+      - name: Make Statics
+        run: docker-compose -f local.yml run --rm django python manage.py collectstatic
+
+      - name: Make Compressed Statics
+        run: docker-compose -f local.yml run --rm django python manage.py compress
+
       - name: Run the Stack
         run:  docker-compose -f local.yml up -d
 
