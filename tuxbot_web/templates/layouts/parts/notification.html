@@ -1,0 +1,9 @@
+{% load static %}
+<div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+	<svg class="icon icon-small icon-success">
+		<use href="{% static 'images/icons/check.svg' %}#check"></use>
+	</svg>
+	<div>
+		<strong>{{ message }}</strong>
+	</div>
+</div>

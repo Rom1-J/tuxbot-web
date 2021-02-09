@@ -1,0 +1,54 @@
+{% load static %}
+{% load i18n %}
+<footer class="footer">
+	<div class="footer-row">
+		<div class="footer-description">
+			<span class="footer-title">TUXBOT</span>
+			<p class="footer-copyright">© {% now 'Y' %} GnousEU | {% trans 'Created by' %} <a href="https://github.com/Rom1-J" target="_blank">Romain J.</a> & <a href="https://github.com/outout14" target="_blank">Outout</a></p>
+		</div>
+		<div class="footer-links">
+			<div class="footer-column">
+				<a href="#" class="footer-link">{% trans 'Wiki' %}</a>
+				<a href="{% url 'pages:sources' %}" class="footer-link">{% trans 'Sources' %}</a>
+				<a href="https://discord.gg/URKy7yd" class="footer-link">{% trans 'Support Server' %}</a>
+			</div>
+			<div class="footer-column">
+				<a href="{% url 'pages:contact' %}" class="footer-link">{% trans 'Contact' %}</a>
+				<a href="#" class="footer-link">{% trans 'Terms' %}</a>
+				<a href="#" class="footer-link">{% trans 'Privacy Policy' %}</a>
+				<div class="footer-dropdown">
+					<a href="#" class="footer-link">
+						{% get_current_language as LANGUAGE_CODE %}
+						{% get_language_info for LANGUAGE_CODE as l %}
+						<img class="icon icon-small margin-clear" src="{% static 'images/icons/flags/'|add:l.code|add:'.svg' %}" alt loading="lazy">
+						<span>{{ l.name_translated }}</span>
+						<img class="icon icon-small margin-clear" src="{% static 'images/icons/sort.svg' %}" alt loading="lazy">
+					</a>
+					<ul class="footer-dropdown-nav">
+						{% for language in LANGUAGES %}
+							<li>
+								<form action="{% url "set_language" %}" method="post">
+									{% csrf_token %}
+									<button type="submit" {% if LANGUAGE_CODE == language.0 %} class="active" {% endif %}>
+										<img class="icon icon-small margin-clear" src="{% static 'images/icons/flags/'|add:language.0|add:'.svg' %}" alt loading="lazy">
+										<span class="margin-small-left">{{ language.1 }}</span>
+									</button>
+									<input name="language" value="{{ language.0 }}" type="hidden">
+								</form>
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-row">
+		<div class="footer-sub-description">
+			<h2 class="footer-title">Here is the place to the main argument</h2>
+			<p class="footer-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<div>
+			<button type="button" class="button button-primary button-large"><img class="icon icon-small" src="{% static 'images/icons/social/discord.svg' %}" alt="Tuxbot">{% trans 'Add to Discord' %}</button>
+		</div>
+	</div>
+</footer>
