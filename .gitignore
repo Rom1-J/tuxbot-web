@@ -325,4 +325,7 @@ tuxbot_web/media/
 .pytest_cache/
 
 
-/.env
+.ipython/
+.env
+.envs/*
+!.envs/.local/

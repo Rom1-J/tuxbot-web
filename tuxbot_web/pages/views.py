@@ -34,6 +34,7 @@ class ContactView(View):
 
     def post(self, request: WSGIRequest):
         form = self.form_class(request.POST)
+        status = 200
 
         if form.is_valid():
             messages.add_message(
@@ -44,7 +45,7 @@ class ContactView(View):
             form = self.form_class(
                 initial={"name": self.request.user.username}
             )
+        else:
+            status = 400
 
-            return render(request, self.template_name, {"form": form})
-
-        return render(request, self.template_name, {"form": form})
+        return render(request, self.template_name, {"form": form}, status=status)
