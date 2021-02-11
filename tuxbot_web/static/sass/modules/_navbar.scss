@@ -84,6 +84,15 @@
 					img {
 						border-radius: 50%;
 					}
+
+					svg {
+						height: 16px;
+						width: 16px;
+
+						margin-left: 5px !important;
+
+						vertical-align: middle;
+					}
 				}
 			}
 
@@ -112,7 +121,7 @@
 		flex-wrap: wrap;
 
 		min-height: 48px;
-		padding: 10px 32px 0 32px;
+		padding: 10px 32px 10px 32px;
 
 		@include blur;
 
@@ -145,17 +154,20 @@
 			position: relative;
 			max-width: 200px;
 
-			a > img {
-				height: 100%;
-				vertical-align: middle;
-
-				&:first-of-type {
+			a {
+				img {
+					height: 100%;
+					vertical-align: middle;
 					border-radius: 50%;
 				}
 
-				&:last-of-type {
+				svg {
 					height: 16px;
 					width: 16px;
+
+					margin-left: 5px !important;
+
+					vertical-align: middle;
 				}
 			}
 
@@ -188,10 +200,12 @@
 						transform: rotate(-45deg);
 						transition: transform .3s ease-in;
 					}
+
 					&:nth-of-type(2) {
 						opacity: 0;
 						transition: transform .2s ease-in;
 					}
+
 					&:nth-of-type(3) {
 						transform-origin: right center;
 						transform: rotate(45deg);
@@ -202,7 +216,7 @@
 		}
 
 		.navbar-hamburger:hover, .navbar-hamburger:active {
-			~ .navbar-sidebar{
+			~ .navbar-sidebar {
 				display: block;
 			}
 		}
@@ -217,7 +231,7 @@
 			z-index: 1;
 
 			width: 100%;
-			margin: 20px 0;
+			margin: 20px 0 0 0;
 
 			border-top: 1px solid darken($light, 69%);
 

@@ -22,7 +22,9 @@
 						{% get_language_info for LANGUAGE_CODE as l %}
 						<img class="icon icon-small margin-clear" src="{% static 'images/icons/flags/'|add:l.code|add:'.svg' %}" alt loading="lazy">
 						<span>{{ l.name_translated }}</span>
-						<img class="icon icon-small margin-clear" src="{% static 'images/icons/sort.svg' %}" alt loading="lazy">
+						<svg class="icon icon-small margin-clear">
+							<use href="{% static 'images/icons/sort.svg' %}#sort"></use>
+						</svg>
 					</a>
 					<ul class="footer-dropdown-nav">
 						{% for language in LANGUAGES %}

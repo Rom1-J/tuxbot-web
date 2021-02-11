@@ -42,6 +42,9 @@
 						<a href="#">
 							<img alt src="https://cdn.discordapp.com/avatars/269156684155453451/ff06e3b4ebd8ac5b4cad78a0a968e95a.png?size=32">
 							<span>{{ request.user.username }}</span>
+							<svg class="icon icon-small margin-clear">
+								<use href="{% static 'images/icons/sort.svg' %}#sort"></use>
+							</svg>
 						</a>
 						<div class="navbar-dropdown">
 							<ul class="navbar-dropdown-nav">
@@ -76,7 +79,9 @@
 			{% else %}
 				<a href="#">
 					<img alt src="https://cdn.discordapp.com/avatars/269156684155453451/ff06e3b4ebd8ac5b4cad78a0a968e95a.png?size=32">
-					<img class="icon icon-small margin-clear" src="{% static 'images/icons/sort.svg' %}" alt loading="lazy">
+					<svg class="icon icon-small margin-clear">
+						<use href="{% static 'images/icons/sort.svg' %}#sort"></use>
+					</svg>
 				</a>
 				<div class="navbar-dropdown">
 					<ul class="navbar-dropdown-nav">
