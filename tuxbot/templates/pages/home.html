@@ -1,0 +1,41 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}Tuxbot{% endblock %}
+
+{% block content %}
+
+    <section class="uk-section uk-preserve-color min-height-100vh uk-margin-large-top">
+        <div class="uk-container">
+            <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-body uk-text-center uk-text-left@s">
+                        <p class="uk-h1 text-white">TuxBot, a bot made for opensource</p>
+                        <p class="text-white-2">Configure moderation, ID cards, polls, and even more with this
+                            dashboard</p>
+
+                        <div class="uk-button-group uk-visible@s uk-width">
+                            <a href="" class="uk-margin-right uk-button uk-button-primary uk-width uk-width-auto@s"><span
+                                    uk-icon="icon: discord"></span> {% trans "Add to Discord" %}</a>
+                            <a href="{% url "pages:wiki" %}" class="uk-margin-left uk-button uk-button-secondary uk-width uk-width-auto@s"><span
+                                    uk-icon="icon: info"></span> {% trans "Read the Docs" %}</a>
+                        </div>
+
+                        <div class="uk-hidden@s">
+                            <a href="" class="uk-margin uk-button uk-button-primary uk-width uk-width-auto@s"><span
+                                    uk-icon="icon: discord"></span> {% trans "Add to Discord" %}</a>
+                            <a href="{% url "pages:wiki" %}" class=" uk-button uk-button-secondary uk-width uk-width-auto@s"><span
+                                    uk-icon="icon: info"></span> {% trans "Read the Docs" %}</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="{% static "images/illustrations/home/1.svg" %}" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+{% endblock content %}

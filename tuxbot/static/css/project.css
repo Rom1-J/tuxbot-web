@@ -1,0 +1,15 @@
+@import url(lib/uikit/uikit.min.css);
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #404eed; }
+
+.min-height-100vh {
+  min-height: 100vh; }
+
+.text-white {
+  color: white !important; }
+
+.text-white-2 {
+  color: #e0e0e0; }
