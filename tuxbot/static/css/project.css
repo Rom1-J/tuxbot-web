@@ -5,8 +5,16 @@ html {
 body {
   background-color: #404eed; }
 
+* {
+  scrollbar-width: none; }
+  *::-webkit-scrollbar {
+    display: none; }
+
 .min-height-100vh {
   min-height: 100vh; }
+
+.min-height-85vh {
+  min-height: 85vh; }
 
 .text-white {
   color: white !important; }

@@ -330,3 +330,4 @@ tuxbot/media/
 .env
 .envs/*
 !.envs/.local/
+tuxbot.db

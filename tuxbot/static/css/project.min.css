@@ -1,1 +1,1 @@
-@import url(lib/uikit/uikit.min.css);html{scroll-behavior:smooth}body{background-color:#404eed}.min-height-100vh{min-height:100vh}.text-white{color:#fff!important}.text-white-2{color:#e0e0e0}
+@import url(lib/uikit/uikit.min.css);html{scroll-behavior:smooth}body{background-color:#404eed}*{scrollbar-width:none}::-webkit-scrollbar{display:none}.min-height-100vh{min-height:100vh}.min-height-85vh{min-height:85vh}.text-white{color:#fff!important}.text-white-2{color:#e0e0e0}

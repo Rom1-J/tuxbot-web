@@ -6,7 +6,7 @@
 
 {% block content %}
 
-    <section class="uk-section uk-preserve-color min-height-100vh uk-margin-large-top">
+    <section class="uk-section uk-preserve-color min-height-85vh uk-margin-large-top">
         <div class="uk-container">
             <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
                 <div>
@@ -16,22 +16,22 @@
                             dashboard</p>
 
                         <div class="uk-button-group uk-visible@s uk-width">
-                            <a href="" class="uk-margin-right uk-button uk-button-primary uk-width uk-width-auto@s"><span
+                            <a href="" class="uk-box-shadow-large uk-margin-right uk-button uk-button-primary uk-width uk-width-auto@s"><span
                                     uk-icon="icon: discord"></span> {% trans "Add to Discord" %}</a>
-                            <a href="{% url "pages:wiki" %}" class="uk-margin-left uk-button uk-button-secondary uk-width uk-width-auto@s"><span
+                            <a href="{% url "pages:wiki" %}" class="uk-box-shadow-large uk-margin-left uk-button uk-button-secondary uk-width uk-width-auto@s"><span
                                     uk-icon="icon: info"></span> {% trans "Read the Docs" %}</a>
                         </div>
 
                         <div class="uk-hidden@s">
-                            <a href="" class="uk-margin uk-button uk-button-primary uk-width uk-width-auto@s"><span
+                            <a href="" class="uk-box-shadow-large uk-margin uk-button uk-button-primary uk-width uk-width-auto@s"><span
                                     uk-icon="icon: discord"></span> {% trans "Add to Discord" %}</a>
-                            <a href="{% url "pages:wiki" %}" class=" uk-button uk-button-secondary uk-width uk-width-auto@s"><span
+                            <a href="{% url "pages:wiki" %}" class="uk-box-shadow-large uk-button uk-button-secondary uk-width uk-width-auto@s"><span
                                     uk-icon="icon: info"></span> {% trans "Read the Docs" %}</a>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <img src="{% static "images/illustrations/home/1.svg" %}" alt="">
+                    <img src="{% static "images/illustrations/home/1.svg" %}" alt="hero" style="filter: drop-shadow(0 5px 42px rgba(0, 0, 0, .6));">
                 </div>
             </div>
 
