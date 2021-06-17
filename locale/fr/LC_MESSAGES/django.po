@@ -1,0 +1,387 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-17 14:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: tuxbot/pages/apps.py:7
+msgid "Pages"
+msgstr "Pages"
+
+#: tuxbot/templates/403_csrf.html:14
+msgid "CSRF verification failed. Request aborted."
+msgstr "La vérification CSRF a échoué. La demande a été abandonnée."
+
+#: tuxbot/templates/404.html:14
+msgid "This is not the page you were looking for."
+msgstr "Ce n'est pas la page que vous recherchiez."
+
+#: tuxbot/templates/500.html:14
+msgid "Looks like something went wrong!"
+msgstr "On dirait que quelque chose a mal tourné !"
+
+#: tuxbot/templates/500.html:15
+msgid ""
+"We track these errors automatically, but if the problem persists feel free "
+"to contact us. In the meantime, try refreshing."
+msgstr ""
+"Nous suivons ces erreurs automatiquement, mais si le problème persiste, n'hésitez pas à "
+"nous contacter. En attendant, essayez de rafraîchir la page."
+
+#: tuxbot/templates/account/account_inactive.html:5
+#: tuxbot/templates/account/account_inactive.html:8
+msgid "Account Inactive"
+msgstr ""
+
+#: tuxbot/templates/account/account_inactive.html:10
+msgid "This account is inactive."
+msgstr ""
+
+#: tuxbot/templates/account/email.html:7
+msgid "Account"
+msgstr ""
+
+#: tuxbot/templates/account/email.html:10
+msgid "E-mail Addresses"
+msgstr ""
+
+#: tuxbot/templates/account/email.html:13
+msgid "The following e-mail addresses are associated with your account:"
+msgstr ""
+
+#: tuxbot/templates/account/email.html:27
+msgid "Verified"
+msgstr ""
+
+#: tuxbot/templates/account/email.html:29
+msgid "Unverified"
+msgstr ""
+
+#: tuxbot/templates/account/email.html:31
+msgid "Primary"
+msgstr ""
+
+#: tuxbot/templates/account/email.html:37
+msgid "Make Primary"
+msgstr ""
+
+#: tuxbot/templates/account/email.html:38
+msgid "Re-send Verification"
+msgstr ""
+
+#: tuxbot/templates/account/email.html:39
+msgid "Remove"
+msgstr ""
+
+#: tuxbot/templates/account/email.html:46
+msgid "Warning:"
+msgstr ""
+
+#: tuxbot/templates/account/email.html:46
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+
+#: tuxbot/templates/account/email.html:51
+msgid "Add E-mail Address"
+msgstr ""
+
+#: tuxbot/templates/account/email.html:56
+msgid "Add E-mail"
+msgstr ""
+
+#: tuxbot/templates/account/email.html:66
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr ""
+
+#: tuxbot/templates/account/email_confirm.html:6
+#: tuxbot/templates/account/email_confirm.html:10
+msgid "Confirm E-mail Address"
+msgstr ""
+
+#: tuxbot/templates/account/email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+
+#: tuxbot/templates/account/email_confirm.html:20
+msgid "Confirm"
+msgstr ""
+
+#: tuxbot/templates/account/email_confirm.html:27
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+
+#: tuxbot/templates/account/login.html:7 tuxbot/templates/account/login.html:11
+#: tuxbot/templates/account/login.html:44
+msgid "Sign In"
+msgstr ""
+
+#: tuxbot/templates/account/login.html:16
+#, python-format
+msgid ""
+"Please sign in with one\n"
+"of your existing third party accounts. Or, <a href=\"%(signup_url)s\">sign "
+"up</a>\n"
+"for a %(site_name)s account and sign in below:"
+msgstr ""
+
+#: tuxbot/templates/account/login.html:26
+msgid "or"
+msgstr ""
+
+#: tuxbot/templates/account/login.html:33
+#, python-format
+msgid ""
+"If you have not created an account yet, then please\n"
+"<a href=\"%(signup_url)s\">sign up</a> first."
+msgstr ""
+
+#: tuxbot/templates/account/login.html:43
+msgid "Forgot Password?"
+msgstr ""
+
+#: tuxbot/templates/account/logout.html:5
+#: tuxbot/templates/account/logout.html:8
+#: tuxbot/templates/account/logout.html:17
+msgid "Sign Out"
+msgstr ""
+
+#: tuxbot/templates/account/logout.html:10
+msgid "Are you sure you want to sign out?"
+msgstr ""
+
+#: tuxbot/templates/account/password_change.html:6
+#: tuxbot/templates/account/password_change.html:9
+#: tuxbot/templates/account/password_change.html:14
+#: tuxbot/templates/account/password_reset_from_key.html:5
+#: tuxbot/templates/account/password_reset_from_key.html:8
+#: tuxbot/templates/account/password_reset_from_key_done.html:4
+#: tuxbot/templates/account/password_reset_from_key_done.html:7
+msgid "Change Password"
+msgstr ""
+
+#: tuxbot/templates/account/password_reset.html:7
+#: tuxbot/templates/account/password_reset.html:11
+#: tuxbot/templates/account/password_reset_done.html:6
+#: tuxbot/templates/account/password_reset_done.html:9
+msgid "Password Reset"
+msgstr ""
+
+#: tuxbot/templates/account/password_reset.html:16
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+
+#: tuxbot/templates/account/password_reset.html:21
+msgid "Reset My Password"
+msgstr ""
+
+#: tuxbot/templates/account/password_reset.html:24
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+
+#: tuxbot/templates/account/password_reset_done.html:15
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: tuxbot/templates/account/password_reset_from_key.html:8
+msgid "Bad Token"
+msgstr ""
+
+#: tuxbot/templates/account/password_reset_from_key.html:12
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+
+#: tuxbot/templates/account/password_reset_from_key.html:18
+msgid "change password"
+msgstr ""
+
+#: tuxbot/templates/account/password_reset_from_key.html:21
+#: tuxbot/templates/account/password_reset_from_key_done.html:8
+msgid "Your password is now changed."
+msgstr ""
+
+#: tuxbot/templates/account/password_set.html:6
+#: tuxbot/templates/account/password_set.html:9
+#: tuxbot/templates/account/password_set.html:14
+msgid "Set Password"
+msgstr ""
+
+#: tuxbot/templates/account/signup.html:6
+msgid "Signup"
+msgstr ""
+
+#: tuxbot/templates/account/signup.html:9
+#: tuxbot/templates/account/signup.html:19
+msgid "Sign Up"
+msgstr ""
+
+#: tuxbot/templates/account/signup.html:11
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+
+#: tuxbot/templates/account/signup_closed.html:5
+#: tuxbot/templates/account/signup_closed.html:8
+msgid "Sign Up Closed"
+msgstr ""
+
+#: tuxbot/templates/account/signup_closed.html:10
+msgid "We are sorry, but the sign up is currently closed."
+msgstr ""
+
+#: tuxbot/templates/account/verification_sent.html:5
+#: tuxbot/templates/account/verification_sent.html:8
+#: tuxbot/templates/account/verified_email_required.html:5
+#: tuxbot/templates/account/verified_email_required.html:8
+msgid "Verify Your E-mail Address"
+msgstr ""
+
+#: tuxbot/templates/account/verification_sent.html:10
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: tuxbot/templates/account/verified_email_required.html:12
+msgid ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your e-mail address. "
+msgstr ""
+
+#: tuxbot/templates/account/verified_email_required.html:16
+msgid ""
+"We have sent an e-mail to you for\n"
+"verification. Please click on the link inside this e-mail. Please\n"
+"contact us if you do not receive it within a few minutes."
+msgstr ""
+
+#: tuxbot/templates/account/verified_email_required.html:20
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
+msgstr ""
+
+#: tuxbot/templates/layouts/parts/footer.html:16
+msgid "Get Help"
+msgstr "Obtenir de l'Aide"
+
+#: tuxbot/templates/layouts/parts/footer.html:20
+#: tuxbot/templates/pages/home.html:21 tuxbot/templates/pages/home.html:28
+msgid "Read the Docs"
+msgstr "Lire la Documentation"
+
+#: tuxbot/templates/layouts/parts/footer.html:21
+msgid "Support server"
+msgstr "Serveur de Support"
+
+#: tuxbot/templates/layouts/parts/footer.html:47
+msgid "Designed and created by"
+msgstr "Designé et créé par"
+
+#: tuxbot/templates/layouts/parts/footer.html:51
+msgid "Built with"
+msgstr "Fait avec"
+
+#: tuxbot/templates/layouts/parts/footer.html:59
+#: tuxbot/templates/pages/home.html:19 tuxbot/templates/pages/home.html:26
+msgid "Add to Discord"
+msgstr "Ajouter à Discord"
+
+#: tuxbot/templates/layouts/parts/navbar.html:11
+msgid "wiki"
+msgstr "wiki"
+
+#: tuxbot/templates/layouts/parts/navbar.html:14
+msgid "support"
+msgstr "support"
+
+#: tuxbot/templates/layouts/parts/navbar.html:17
+msgid "sources"
+msgstr "sources"
+
+#: tuxbot/templates/layouts/parts/navbar.html:30
+msgid "My groups"
+msgstr ""
+
+#: tuxbot/templates/layouts/parts/navbar.html:33
+msgid "My profile"
+msgstr ""
+
+#: tuxbot/templates/layouts/parts/navbar.html:37
+msgid "Settings"
+msgstr ""
+
+#: tuxbot/templates/layouts/parts/navbar.html:40
+msgid "Logout"
+msgstr ""
+
+#: tuxbot/templates/pages/home.html:14
+msgid "TuxBot, a bot made for opensource"
+msgstr "TuxBot, un bot fait pour l'opensource"
+
+#: tuxbot/templates/pages/home.html:15
+msgid ""
+"Configure moderation, ID cards, polls, and even more with this dashboard"
+msgstr ""
+"Configurez la modération, les cartes d'identité, les sondages et bien plus encore grâce à ce tableau de bord."
+
+#: tuxbot/users/admin.py:18
+msgid "Personal info"
+msgstr ""
+
+#: tuxbot/users/admin.py:20
+msgid "Permissions"
+msgstr ""
+
+#: tuxbot/users/admin.py:31
+msgid "Important dates"
+msgstr ""
+
+#: tuxbot/users/apps.py:7
+msgid "Users"
+msgstr ""
+
+#: tuxbot/users/forms.py:18 tuxbot/users/tests/test_forms.py:39
+msgid "This username has already been taken."
+msgstr ""
+
+#: tuxbot/users/models.py:11
+msgid "Name of User"
+msgstr ""
+
+#: tuxbot/users/views.py:25
+msgid "Information successfully updated"
+msgstr ""

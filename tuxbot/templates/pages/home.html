@@ -11,14 +11,13 @@
             <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
                 <div>
                     <div class="uk-card uk-card-body uk-text-center uk-text-left@s">
-                        <p class="uk-h1 text-white">TuxBot, a bot made for opensource</p>
-                        <p class="text-white-2">Configure moderation, ID cards, polls, and even more with this
-                            dashboard</p>
+                        <p class="uk-h1 text-white">{% trans "TuxBot, a bot made for opensource" %}</p>
+                        <p class="text-white-2">{% trans "Configure moderation, ID cards, polls, and even more with this dashboard" %}</p>
 
                         <div class="uk-button-group uk-visible@s uk-width">
-                            <a href="{% url "pages:add" %}" class="uk-box-shadow-large uk-margin-right uk-button uk-button-primary uk-width uk-width-auto@s"><span
+                            <a href="{% url "pages:add" %}" class="uk-box-shadow-large uk-button uk-button-primary uk-width uk-width-auto@s"><span
                                     uk-icon="icon: discord"></span> {% trans "Add to Discord" %}</a>
-                            <a href="{% url "pages:wiki" %}" class="uk-box-shadow-large uk-margin-left uk-button uk-button-secondary uk-width uk-width-auto@s"><span
+                            <a href="{% url "pages:wiki" %}" class="uk-box-shadow-large uk-button uk-button-secondary uk-width uk-width-auto@s"><span
                                     uk-icon="icon: info"></span> {% trans "Read the Docs" %}</a>
                         </div>
 
