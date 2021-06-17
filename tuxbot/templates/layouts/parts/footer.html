@@ -1,0 +1,64 @@
+{% load static %}
+{% load i18n %}
+
+
+<footer class="uk-padding-remove-bottom uk-section-secondary">
+    <div class="uk-padding uk-flex">
+        <div class="uk-container uk-width">
+            <div class="uk-column-1-2@s">
+                <div>
+                    <span class="uk-h2 uk-text-uppercase">Tuxbot</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                        Ducimus eius itaque nam quam suscipit. Eius excepturi exercitationem ipsa omnis quas? Ab ad
+                        corporis cum</p>
+                </div>
+                <div class="uk-text-right@s">
+                    <u class="uk-text-muted">{% trans "Get Help" %}</u>
+
+
+                    <ul class="uk-list">
+                        <li><a href="{% url 'pages:wiki' %}">{% trans "Read the Docs" %}</a></li>
+                        <li><a href="{% url 'pages:support' %}">{% trans "Support server" %}</a></li>
+                    </ul>
+
+                    <form action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% if LANGUAGE_CODE == 'en' %}
+                            <button type="submit" style="background: transparent; border: none">
+                                <img src="{% static 'images/icons/fr.svg' %}" alt="fr" width="18">
+                            </button>
+                            <input type="hidden" name="language" value="fr">
+                        {% else %}
+                            <button type="submit" style="background: transparent; border: none">
+                                <img src="{% static 'images/icons/en.svg' %}" alt="en" width="18">
+                            </button>
+                            <input type="hidden" name="language" value="en">
+                        {% endif %}
+                    </form>
+
+                </div>
+            </div>
+            <hr>
+            <div class="uk-column-1-2@s">
+                <div class="uk-text-left@s uk-text-center">
+                    <span class="uk-text-small uk-text-muted">© {% now "Y" %}
+                        <a href="https://gnous.eu" target="_blank" class="uk-link">GnousEU</a>
+                        | {% trans "Designed and created by" %}
+                    </span>
+                    <a class="uk-text-small uk-link" href="https://github.com/Romain">Romain J.</a>
+
+                    <span class="uk-text-small uk-text-muted"> | {% trans "Built with" %} </span>
+                    <a href="https://getuikit.com" target="_blank" uk-tooltip="UIKit"
+                       class="uk-link" uk-icon="icon: uikit">
+
+                    </a>
+                </div>
+                <div class="uk-text-right@s uk-margin-top">
+                    <a href="{% url "pages:add" %}" class="uk-button uk-button-primary uk-width uk-width-auto@s"><span
+                            uk-icon="icon: discord"></span> {% trans "Add to Discord" %}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

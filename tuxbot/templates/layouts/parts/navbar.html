@@ -1,0 +1,49 @@
+{% load static %}
+{% load i18n %}
+<header>
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav uk-navbar-nav">
+                <li {% if request.resolver_match.url_name == 'home' %} class="uk-active" {% endif %}>
+                    <a href="{% url 'pages:home' %}">Tuxbot</a>
+                </li>
+                <li {% if request.resolver_match.url_name == 'wiki' %} class="uk-active" {% endif %}>
+                    <a href="{% url 'pages:wiki' %}">{% trans "wiki" %}</a>
+                </li>
+                <li {% if request.resolver_match.url_name == 'support' %} class="uk-active" {% endif %}>
+                    <a href="{% url 'pages:support' %}">{% trans "support" %}</a>
+                </li>
+                <li {% if request.resolver_match.url_name == 'support' %} class="uk-active" {% endif %}>
+                    <a href="{% url 'pages:sources' %}">{% trans "sources" %}</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav uk-navbar-nav">
+                {% if not request.user.is_authenticated %}
+                    <li {% if request.resolver_match.url_name == 'account_login' %} class="uk-active" {% endif %}>
+                        <a href="#" uk-icon="icon: discord; ratio: 2"></a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a href="{% url 'groups:home' %}">{% trans "My groups" %}</a>
+                    </li>
+                    <li>
+                        <a href="#">{% trans "My profile" %}</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li {% if request.resolver_match.url_name == 'update' %} class="uk-active" {% endif %}>
+                                    <a href="{% url 'users:update' %}">{% trans 'Settings' %}</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'account_logout' %}" class="uk-text-danger">{% trans 'Logout' %}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+</header>
