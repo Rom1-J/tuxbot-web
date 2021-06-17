@@ -3,75 +3,69 @@
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{% block title %}Tuxbot{% endblock title %}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tuxbot">
-  <meta name="author" content="Romain J.">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% block title %}Tuxbot{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tuxbot">
+    <meta name="author" content="Romain J.">
 
-  <meta name="turbolinks-cache-control" content="no-cache">
+    <meta name="turbolinks-cache-control" content="no-cache">
 
-  <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}">
+    <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}">
 
-  {% block css %}{% endblock %}
+    {% block css %}{% endblock %}
 
-  {% compress css %}
-    <link href="{% static 'css/project.css' %}" rel="stylesheet">
-  {% endcompress %}
-
-
-  {% block javascript %}{% endblock javascript %}
-
-  {% if not DEBUG %}
-    {% compress js %}
-      <script defer src="{% static 'js/lib/turbolinks.js' %}"></script>
+    {% compress css %}
+        <link href="{% static 'css/project.css' %}" rel="stylesheet">
     {% endcompress %}
-  {% endif %}
 
-  {% compress js %}
-    <script src="{% static 'js/lib/uikit/uikit.min.js' %}"></script>
-    <script src="{% static 'js/lib/uikit/uikit-icons.min.js' %}"></script>
 
-    <script defer src="{% static 'js/project.js' %}"></script>
-  {% endcompress %}
+    {% block javascript %}{% endblock javascript %}
+
+    {% compress js %}
+        <script src="{% static 'js/lib/uikit/uikit.min.js' %}"></script>
+        <script src="{% static 'js/lib/uikit/uikit-icons.min.js' %}"></script>
+
+        <script defer src="{% static 'js/project.js' %}"></script>
+    {% endcompress %}
 </head>
 
 <body>
 
 <div class="uk-flex uk-flex-column min-height-100vh">
-  {% include 'layouts/parts/navbar.html' %}
+    {% include 'layouts/parts/navbar.html' %}
 
-  <div class="uk-container">
-    {% block breadcrumb %}{% endblock breadcrumb %}
-  </div>
+    <div class="uk-container">
+        {% block breadcrumb %}{% endblock breadcrumb %}
+    </div>
 
-  <div class="uk-flex-1" id="app">
-    {% if messages %}
-      {% for message in messages %}
-        <script>
-          UIkit.notification(
-                  {
-                    message: '{{ message }}',
-                    pos: 'top-left',
-                    status:
-                            {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
-                              'success'
-                            {% elif message.level == DEFAULT_MESSAGE_LEVELS.INFO %}
-                              'primary'
-                            {% elif message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
-                              'danger'
-                            {% endif %}
-                  }
-          );
-        </script>
-      {% endfor %}
-    {% endif %}
+    <div class="uk-flex-1" id="app">
+        {% if messages %}
+            {% for message in messages %}
+                <script>
+                    UIkit.notification(
+                        {
+                            message: '{{ message }}',
+                            pos: 'top-left',
+                            status:
+                                {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+                                    'success'
+                                {% elif message.level == DEFAULT_MESSAGE_LEVELS.INFO %}
+                                    'primary'
+                                {% elif message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+                                    'danger'
+                                {% endif %}
+                        }
+                    );
+                </script>
+            {% endfor %}
+        {% endif %}
 
-    {% block content %}{% endblock content %}
-  </div>
+        {% block content %}{% endblock content %}
+    </div>
 
-  {% include 'layouts/parts/footer.html' %}
+    {% include 'layouts/parts/footer.html' %}
 </div>
 
 

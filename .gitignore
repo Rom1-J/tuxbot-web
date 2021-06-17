@@ -15,9 +15,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
-parts/
 sdist/
 var/
 wheels/
@@ -328,6 +326,7 @@ tuxbot/media/
 
 .ipython/
 .env
+.env.local
 .envs/*
 !.envs/.local/
 tuxbot.db
