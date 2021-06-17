@@ -1,0 +1,13 @@
+.uk-navbar-nav {
+    & > li {
+        & > a {
+            color: white;
+        }
+
+        &.uk-active {
+            & > a {
+                color: white
+            }
+        }
+    }
+}

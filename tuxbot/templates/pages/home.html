@@ -16,7 +16,7 @@
                             dashboard</p>
 
                         <div class="uk-button-group uk-visible@s uk-width">
-                            <a href="" class="uk-box-shadow-large uk-margin-right uk-button uk-button-primary uk-width uk-width-auto@s"><span
+                            <a href="{% url "pages:add" %}" class="uk-box-shadow-large uk-margin-right uk-button uk-button-primary uk-width uk-width-auto@s"><span
                                     uk-icon="icon: discord"></span> {% trans "Add to Discord" %}</a>
                             <a href="{% url "pages:wiki" %}" class="uk-box-shadow-large uk-margin-left uk-button uk-button-secondary uk-width uk-width-auto@s"><span
                                     uk-icon="icon: info"></span> {% trans "Read the Docs" %}</a>
@@ -34,7 +34,6 @@
                     <img src="{% static "images/illustrations/home/1.svg" %}" alt="hero" style="filter: drop-shadow(0 5px 42px rgba(0, 0, 0, .6));">
                 </div>
             </div>
-
         </div>
     </section>
 

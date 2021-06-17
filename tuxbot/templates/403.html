@@ -1,19 +1,23 @@
 {% extends "layouts/base.html" %}
+{% load static %}
+{% load i18n %}
 
 {% block title %}Forbidden (403){% endblock %}
 
 {% block content %}
-	<main class="http-error">
-		<section class="uk-section uk-preserve-color">
-			<div class="uk-container">
-				<div class="uk-card uk-card-default">
-                    <div class="uk-card-body">
-						<h1 class="uk-card-title">
-							Forbidden (403)
-						</h1>
-					</div>
+    <section class="uk-section uk-preserve-color uk-margin-large-top">
+        <div class="uk-container">
+            <div class="uk-grid-match uk-child-width-expand@m" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-body uk-text-center uk-text-left@s">
+                        <h1 class="text-white">Forbidden (403)</h1>
+                    </div>
                 </div>
-			</div>
-		</section>
-	</main>
+                <div>
+                    <img src="{% static "images/illustrations/errors/403.svg" %}" alt="hero"
+                         style="filter: drop-shadow(0 5px 42px rgba(0, 0, 0, .6));">
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock content %}

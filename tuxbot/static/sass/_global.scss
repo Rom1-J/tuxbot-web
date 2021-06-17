@@ -1,0 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2c2f33;
+}
+
+* {
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

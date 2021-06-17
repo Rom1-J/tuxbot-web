@@ -1,14 +1,32 @@
 @import url(lib/uikit/uikit.min.css);
+.uk-navbar-nav > li > a {
+  color: white; }
+
+.uk-navbar-nav > li.uk-active > a {
+  color: white; }
+
 html {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #404eed; }
+  background-color: #2c2f33; }
 
 * {
   scrollbar-width: none; }
   *::-webkit-scrollbar {
     display: none; }
+
+.min-height-100vh {
+  min-height: 100vh; }
+
+.min-height-85vh {
+  min-height: 85vh; }
+
+.text-white {
+  color: white !important; }
+
+.text-white-2 {
+  color: #e0e0e0; }
 
 .min-height-100vh {
   min-height: 100vh; }
